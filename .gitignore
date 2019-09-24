@@ -1,0 +1,17 @@
+/node_modules
+/coverage
+pm2.api.dev.json
+test.json
+/logs
+/.next
+/bundles
+/dist
+.dev/
+.DS_Store
+.env
+npm-debug.log*
+
+.idea/
+.vscode/
+.dev/
+*.missing.json
