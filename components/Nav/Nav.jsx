@@ -25,6 +25,9 @@ class Nav extends React.Component {
                     width: 224px;
                     height: 50px;
                 }
+                a:hover{
+                    border-bottom:3px solid red;
+                }
                 `}</style>
                 <div className="right nav">
                     <a href="/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=11" target="_blank" class="">首页</a>
