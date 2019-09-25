@@ -1,7 +1,71 @@
 import React from 'react';
-import { Menu, Icon } from 'antd';
 import Link from 'next/link'
+import { Menu, Dropdown, Icon } from 'antd';
 const { SubMenu } = Menu;
+const ABOUT_MENU = (
+    <Menu>
+        <Menu.Item>
+            <Link href="/about">
+                <a >关于我们</a>
+            </Link>
+        </Menu.Item>
+        <Menu.Item>
+            <a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/">
+                服务领域
+      </a>
+        </Menu.Item>
+        <Menu.Item>
+            <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
+                新闻中心
+      </a>
+        </Menu.Item>
+        <Menu.Item>
+            <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
+                人才引进
+      </a>
+        </Menu.Item>
+    </Menu>
+);
+const PRODUCT_MENU = (
+    <Menu>
+        <Menu.Item>
+
+            <a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/">
+                家具
+      </a>
+        </Menu.Item>
+        <Menu.Item>
+            <a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/">
+                灯具
+      </a>
+        </Menu.Item>
+        <Menu.Item>
+            <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
+                工艺
+      </a>
+        </Menu.Item>
+        <Menu.Item>
+            <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
+                饰品
+      </a>
+        </Menu.Item>
+        <Menu.Item>
+            <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
+                画艺
+      </a>
+        </Menu.Item>
+        <Menu.Item>
+            <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
+                地毯
+      </a>
+        </Menu.Item>
+        <Menu.Item>
+            <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
+                华艺
+      </a>
+        </Menu.Item>
+    </Menu>
+)
 class Nav extends React.Component {
     render() {
         return (
@@ -26,21 +90,30 @@ class Nav extends React.Component {
                     width: 224px;
                     height: 50px;
                 }
-                a:hover{
+                {/* a:hover{
                     border-bottom:3px solid red;
-                }
+                } */}
+                
                 `}</style>
                 <div className="right nav">
                     <Link href="/">
                         <a className="">首页</a>
                     </Link>
-                    <Link href="/about">
+                    <Dropdown overlay={ABOUT_MENU}>
                         <a className="">关于</a>
+                    </Dropdown>
+                    <Link href="/case">
+                        <a className="">案例</a>
                     </Link>
-                    <a href="/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=65" target="_blank" className="">案例</a>
-                    <a href="/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=66" target="_blank" className="logo"></a>
-                    <a href="/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=60" target="_blank" className="">产品</a>
-                    <a href="/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=61" target="_blank" className="">团队</a>
+                    <Link href="/">
+                        <a  className="logo"></a>
+                    </Link>
+                    <Dropdown overlay={PRODUCT_MENU}>
+                        <a className="">产品</a>
+                    </Dropdown>
+                    <Link href="/teamView">
+                        <a className="">团队</a>
+                    </Link>
                 </div>
             </div>
         )

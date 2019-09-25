@@ -21,7 +21,6 @@ export default class MyApp extends App {
             </Head>
             <TopNav />
             <Nav />
-            <Banner bgImg={'../static/img/index_banner.jpg'} />
             <Component {...pageProps} />
             <Footer />
         </Container>
