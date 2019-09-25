@@ -1,5 +1,6 @@
 import React from 'react';
 import { Menu, Icon } from 'antd';
+import Link from 'next/link'
 const { SubMenu } = Menu;
 class Nav extends React.Component {
     render() {
@@ -30,12 +31,16 @@ class Nav extends React.Component {
                 }
                 `}</style>
                 <div className="right nav">
-                    <a href="/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=11" target="_blank" class="">首页</a>
-                    <a href="/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=64" target="_blank" class="">关于</a>
-                    <a href="/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=65" target="_blank" class="">案例</a>
+                    <Link href="/">
+                        <a className="">首页</a>
+                    </Link>
+                    <Link href="/about">
+                        <a className="">关于</a>
+                    </Link>
+                    <a href="/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=65" target="_blank" className="">案例</a>
                     <a href="/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=66" target="_blank" className="logo"></a>
-                    <a href="/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=60" target="_blank" class="">产品</a>
-                    <a href="/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=61" target="_blank" class="">团队</a>
+                    <a href="/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=60" target="_blank" className="">产品</a>
+                    <a href="/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=61" target="_blank" className="">团队</a>
                 </div>
             </div>
         )
