@@ -1,6 +1,6 @@
 import React from 'react';
 
-function H1() {
+function H1({ title, subTitle }) {
     return (
         <div className="title">
             <style jsx>{`
@@ -41,12 +41,15 @@ function H1() {
                     overflow: hidden;
                     margin-top: 18px;
                 }
+                .c_red{
+                    color:#ff3333
+                }
             `}</style>
             <h3>
-                <span>环保整装<font className="c_red">套餐</font></span>
-                <div>Decoration package</div>
+                <span>{title}</span>
+                <div>{subTitle}</div>
             </h3>
-            <div class="line"></div>
+            <div className="line"></div>
         </div>
     )
 }

@@ -1,6 +1,21 @@
 import React from 'react';
-import {  Banner,H1 } from '../components';
+import { Banner, H1 } from '../components';
 class Index extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            package: [
+                {
+                    title: '整装·极致装',
+                    o_price: '1398',
+                    price: '699',
+                    desc: '创造白领阶层梦想生活',
+                    img: '../static/img/tc_jzz2.jpg'
+                }
+            ],
+            packageIdx: 0,
+        }
+    }
     render() {
         return (
             <React.Fragment>
@@ -60,6 +75,23 @@ class Index extends React.Component {
                 .tb3 {
                     background-position: -192px -50px;
                 }
+                .main_con{
+                    max-width:1200px;
+                    margin:0 auto;
+                }
+                .floor_1{
+                    height: 400px;
+                    margin-top: 42px;
+                    display:flex;
+                }
+                .floor_1 .left{
+                    width: 520px;
+                    height:100%;
+                }
+                .floor_1 .right{
+                    width: 680px;
+                    height:100%;
+                }
                 `}</style>
                 <Banner bgImg={'../static/img/index_banner.jpg'} />
                 <ul className="auto pic">
@@ -92,7 +124,16 @@ class Index extends React.Component {
                         </div>
                     </li>
                 </ul>
-                <H1 />
+                <div className="main_con">
+                    <H1
+                        title={<span>环保整装<font style={{ color: '#ff3333' }}>套餐</font></span>}
+                        subTitle={"Decoration package"} />
+                </div>
+
+                <div className="floor_1 main_con">
+                    <div className="left"></div>
+                    <div className="right"></div>
+                </div>
             </React.Fragment>
         )
     }
