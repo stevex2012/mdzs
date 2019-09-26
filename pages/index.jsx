@@ -17,6 +17,8 @@ class Index extends React.Component {
         }
     }
     render() {
+        const { packageIdx } = this.state;
+        const packageData =  this.state.package[packageIdx];
         return (
             <React.Fragment>
                 <style jsx>{`
@@ -76,7 +78,7 @@ class Index extends React.Component {
                     background-position: -192px -50px;
                 }
                 .main_con{
-                    max-width:1200px;
+                    width:1200px;
                     margin:0 auto;
                 }
                 .floor_1{
@@ -87,10 +89,80 @@ class Index extends React.Component {
                 .floor_1 .left{
                     width: 520px;
                     height:100%;
+                    background: #ff3333;
+                    overflow: hidden;
                 }
                 .floor_1 .right{
                     width: 680px;
                     height:100%;
+                }
+                .inner_box{
+                    border: 2px #fff8f8 solid; 
+                    width: 480px;
+                    height: 300px;
+                    margin: 50px auto 0px auto;
+                    position: relative;
+                    color: #fff;
+                    text-align: center;
+                    z-index: 1;
+                }
+                .inner_box h1{
+                    width: 315px;
+                    text-align: center;
+                    font-size: 36px;
+                    position: absolute;
+                    left: 90px;
+                    top: -26px;
+                    font-family: 黑体;
+                    font-weight: bold;
+                    background: rgb(255, 51, 51);
+                    color:#fff;
+                }
+                .inner_box p{
+                    color: #ffdada;
+                    padding-top: 30px;
+                }
+                .inner_box p span{
+                    margin: 0px 15px;
+                }
+                .inner_box h3{
+                    font-size: 48px;
+                    margin-top: 46px;
+                    font-weight: normal;
+                    color: #fff;
+                }
+                .yuanjia{
+                    font-size: 24px;
+                    color: #ffd0d0;
+                    text-decoration: line-through;
+                }
+                .package_tab{
+                    background: #ff3333;
+                    width: 420px;
+                    height: 37px;
+                    position: absolute;
+                    left: 50%;
+                    margin-left:-210px;
+                    bottom: -19px;
+                    z-index: 2;
+                }
+                .package_tab .tab_item{
+                    width: 104px;
+                    height: 37px;
+                    background: #fff;
+                    float: left;
+                    text-align: center;
+                    color: #3a3a3a;
+                    text-align: center;
+                    line-height: 37px;
+                    margin-left: 29px;
+                    overflow: hidden;
+                    font-size: 18px;
+                    cursor: pointer;
+                }
+                .package_tab .ac{
+                    background: #3a3a3a;
+                    color: #fff;
                 }
                 `}</style>
                 <Banner bgImg={'../static/img/index_banner.jpg'} />
@@ -129,10 +201,23 @@ class Index extends React.Component {
                         title={<span>环保整装<font style={{ color: '#ff3333' }}>套餐</font></span>}
                         subTitle={"Decoration package"} />
                 </div>
-
                 <div className="floor_1 main_con">
-                    <div className="left"></div>
-                    <div className="right"></div>
+                    <div className="left">
+                        <div className="inner_box">
+                            <h1>{packageData.title}</h1>
+                            <p>包设计<span> · </span>包材料<span> · </span>包施工<span> · </span>包监理<span> · </span>包售后<span> · </span>包保洁</p>
+                            <h3>半价{packageData.price}元/㎡</h3>
+                            <div className="yuanjia">原{packageData.o_price}元/㎡</div>
+                            <div className="package_tab">
+                                <span className={`tab_item ${packageIdx === 0 ? 'ac' : ''}`}>精致装</span>
+                                <span className={`tab_item ${packageIdx === 1 ? 'ac' : ''}`}>雅致装</span>
+                                <span className={`tab_item ${packageIdx === 2 ? 'ac' : ''}`}>极致装</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="right">
+                        <img src={packageData.img} alt='' />
+                    </div>
                 </div>
             </React.Fragment>
         )
