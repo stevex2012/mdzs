@@ -1,7 +1,7 @@
 import App, { Container } from 'next/app'
 import React from 'react';
 import Head from 'next/head'
-import { TopNav,Nav, Banner, Footer } from '../components';
+import { TopNav,Nav, Footer, FloatMenu } from '../components';
 export default class MyApp extends App {
     static async getInitialProps({ Component, router, ctx }) {
         let pageProps = {}
@@ -22,6 +22,7 @@ export default class MyApp extends App {
             <TopNav />
             <Nav />
             <Component {...pageProps} />
+            <FloatMenu />
             <Footer />
         </Container>
     }

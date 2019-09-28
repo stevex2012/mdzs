@@ -220,16 +220,16 @@ class Index extends React.Component {
                     </div>
                 </div>
                 {/* 关于 */}
-                <div className="" >
-                    关于
+                <div className="" id="md_about">
+                    <h1>关于</h1>
                 </div>
                 {/* 团队 */}
-                <div className="">
-                    团队
+                <div className="" id="md_team">
+                    <h1>团队</h1>
                 </div>
                 {/* 联系 */}
-                <div className="">
-                    联系
+                <div className="" id="md_connect">
+                    <h1>联系</h1>
                 </div>
             </React.Fragment>
         )
