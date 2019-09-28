@@ -1,14 +1,23 @@
 import React from 'react';
 
-function Footer(){
+function Footer() {
     return (
         <div className="footer">
             <style jsx>{`
                 .footer{
-                    height: 300px;
-                    background: #000;
+                    background-color: #E7E7E7;
+                    height: auto;
+                    position: relative;
+                    padding:40px 15px 65px;
+                    display:flex;
+                    align-items:center;
+                }
+                .item{
+                    flex:1;
                 }
             `}</style>
+            <div className="left item"></div>
+            <div className="right item"></div>
         </div>
     )
 }

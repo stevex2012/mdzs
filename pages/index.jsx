@@ -18,7 +18,7 @@ class Index extends React.Component {
     }
     render() {
         const { packageIdx } = this.state;
-        const packageData =  this.state.package[packageIdx];
+        const packageData = this.state.package[packageIdx];
         return (
             <React.Fragment>
                 <style jsx>{`
@@ -218,6 +218,18 @@ class Index extends React.Component {
                     <div className="right">
                         <img src={packageData.img} alt='' />
                     </div>
+                </div>
+                {/* 关于 */}
+                <div className="" >
+                    关于
+                </div>
+                {/* 团队 */}
+                <div className="">
+                    团队
+                </div>
+                {/* 联系 */}
+                <div className="">
+                    联系
                 </div>
             </React.Fragment>
         )
