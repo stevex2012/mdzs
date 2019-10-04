@@ -47,6 +47,7 @@ function H1({ title, subTitle }) {
             `}</style>
             <h3>
                 <span>{title}</span>
+                
                 <div>{subTitle}</div>
             </h3>
             <div className="line"></div>
