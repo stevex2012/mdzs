@@ -31,7 +31,7 @@ const PRODUCT_MENU = (
         <Menu.Item>
 
             <a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/">
-                家具
+                窗帘
       </a>
         </Menu.Item>
         <Menu.Item>
@@ -41,7 +41,22 @@ const PRODUCT_MENU = (
         </Menu.Item>
         <Menu.Item>
             <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
-                工艺
+                地毯
+      </a>
+        </Menu.Item>
+        <Menu.Item>
+            <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
+                花艺
+      </a>
+        </Menu.Item>
+        <Menu.Item>
+            <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
+                画品
+      </a>
+        </Menu.Item>
+        <Menu.Item>
+            <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
+                家具
       </a>
         </Menu.Item>
         <Menu.Item>
@@ -49,30 +64,19 @@ const PRODUCT_MENU = (
                 饰品
       </a>
         </Menu.Item>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
-                画艺
-      </a>
-        </Menu.Item>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
-                地毯
-      </a>
-        </Menu.Item>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
-                华艺
-      </a>
-        </Menu.Item>
     </Menu>
 )
 const CASE_DROP_DOWN = (
     <Menu>
         <Menu.Item>
-            工装类
+            <Link href="/case">
+                工装类
+            </Link>
         </Menu.Item>
         <Menu.Item>
-            私宅类
+            <Link href="/case">
+                私宅类
+            </Link>
         </Menu.Item>
     </Menu>
 )
@@ -117,7 +121,7 @@ class Nav extends React.Component {
                         <a className="">案例</a>
                     </Dropdown>
                     <Link href="/">
-                        <a  className="logo"></a>
+                        <a className="logo"></a>
                     </Link>
                     <Dropdown overlay={PRODUCT_MENU}>
                         <a className="">产品</a>

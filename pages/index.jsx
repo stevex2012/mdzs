@@ -201,7 +201,8 @@ class Index extends React.Component {
                         title={<span>环保整装<font style={{ color: '#ff3333' }}>套餐</font></span>}
                         subTitle={"Decoration package"} />
                 </div>
-                <div className="floor_1 main_con">
+                {/* 暂时不要 */}
+                {/* <div className="floor_1 main_con">
                     <div className="left">
                         <div className="inner_box">
                             <h1>{packageData.title}</h1>
@@ -218,7 +219,7 @@ class Index extends React.Component {
                     <div className="right">
                         <img src={packageData.img} alt='' />
                     </div>
-                </div>
+                </div> */}
                 {/* 关于 */}
                 <div className="" id="md_about">
                     <h1>关于</h1>

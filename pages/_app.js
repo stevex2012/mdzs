@@ -19,7 +19,7 @@ export default class MyApp extends App {
             <Head>
                 <link href="../static/css/base.css" rel="stylesheet" />
             </Head>
-            <TopNav />
+            {/* <TopNav /> */}
             <Nav />
             <Component {...pageProps} />
             <FloatMenu />
