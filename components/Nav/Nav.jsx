@@ -66,6 +66,16 @@ const PRODUCT_MENU = (
         </Menu.Item>
     </Menu>
 )
+const CASE_DROP_DOWN = (
+    <Menu>
+        <Menu.Item>
+            工装类
+        </Menu.Item>
+        <Menu.Item>
+            私宅类
+        </Menu.Item>
+    </Menu>
+)
 class Nav extends React.Component {
     render() {
         return (
@@ -85,6 +95,9 @@ class Nav extends React.Component {
                     align-items: center;
                     height: 100%;
                 }
+                .nav  a{
+                    font-size:16px;
+                }
                 .logo{
                     background: url(../../static/img/img.jpg) no-repeat;
                     width: 224px;
@@ -99,21 +112,18 @@ class Nav extends React.Component {
                     <Link href="/">
                         <a className="">首页</a>
                     </Link>
-                    <Dropdown overlay={ABOUT_MENU}>
-                        <a className="">关于</a>
-                    </Dropdown>
-                    <Link href="/case">
+                    <a className="" href="#md_about">关于</a>
+                    <Dropdown overlay={CASE_DROP_DOWN}>
                         <a className="">案例</a>
-                    </Link>
+                    </Dropdown>
                     <Link href="/">
                         <a  className="logo"></a>
                     </Link>
                     <Dropdown overlay={PRODUCT_MENU}>
                         <a className="">产品</a>
                     </Dropdown>
-                    <Link href="/teamView">
-                        <a className="">团队</a>
-                    </Link>
+                    <a className="" href="#md_team">团队</a>
+                    <a className="" href="#md_connect">联系</a>
                 </div>
             </div>
         )
