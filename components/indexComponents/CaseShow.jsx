@@ -30,25 +30,25 @@ const G_Z_DATA = {
 //私装数据
 const S_Z_DATA = {
     bg: {
-        img: '../../static/img/caseshow/gong/bg.png',
+        img: '../../static/img/caseshow/si/bg.png',
     },
     bottom: [
         {
-            img: '../../static/img/caseshow/gong/bg.png',
+            img: '../../static/img/caseshow/si/bg.png',
         },
         {
-            img: '../../static/img/caseshow/gong/bg.png',
+            img: '../../static/img/caseshow/si/bg.png',
         }
     ],
     right: [
         {
-            img: '../../static/img/caseshow/gong/bg.png',
+            img: '../../static/img/caseshow/si/bg.png',
         },
         {
-            img: '../../static/img/caseshow/gong/bg.png',
+            img: '../../static/img/caseshow/si/bg.png',
         },
         {
-            img: '../../static/img/caseshow/gong/bg.png',
+            img: '../../static/img/caseshow/si/bg.png',
         }
     ]
 }
@@ -137,14 +137,12 @@ const CaseShow = () => {
                         <img src={bg.img} />
                     </div>
                     <div className="bottom">
-                        {
-                            bottom.map(item => {
+                        {bottom.map(item=>{
                             const { img } = item;
-                            return <div key={img} className="item">
+                            return <div className="item">
                                 <img src={img} />;
                             </div>
-                        })
-                        }
+                        })}
                     </div>
                 </div>
                 <div className="right">

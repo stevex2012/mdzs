@@ -1,5 +1,10 @@
 import React from 'react';
 import { Banner, H1 } from '../components';
+import CaseShow from '../components/indexComponents/CaseShow';
+import About from '../components/indexComponents/About';
+import Team from '../components/indexComponents/Team'; 
+import Connect from '../components/indexComponents/Connect'; 
+
 class Index extends React.Component {
     constructor(props) {
         super(props);
@@ -196,11 +201,11 @@ class Index extends React.Component {
                         </div>
                     </li>
                 </ul>
-                <div className="main_con">
+                {/* <div className="main_con">
                     <H1
                         title={<span>环保整装<font style={{ color: '#ff3333' }}>套餐</font></span>}
                         subTitle={"Decoration package"} />
-                </div>
+                </div> */}
                 {/* 暂时不要 */}
                 {/* <div className="floor_1 main_con">
                     <div className="left">
@@ -220,17 +225,18 @@ class Index extends React.Component {
                         <img src={packageData.img} alt='' />
                     </div>
                 </div> */}
+                <CaseShow />
                 {/* 关于 */}
                 <div className="" id="md_about">
-                    <h1>关于</h1>
+                    <About />
                 </div>
                 {/* 团队 */}
                 <div className="" id="md_team">
-                    <h1>团队</h1>
+                    <Team />
                 </div>
                 {/* 联系 */}
                 <div className="" id="md_connect">
-                    <h1>联系</h1>
+                    <Connect />
                 </div>
             </React.Fragment>
         )
