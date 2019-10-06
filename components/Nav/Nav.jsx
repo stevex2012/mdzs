@@ -69,12 +69,12 @@ const PRODUCT_MENU = (
 const CASE_DROP_DOWN = (
     <Menu>
         <Menu.Item>
-            <Link href="/case">
+            <Link href="/case?type=0" >
                 工装类
             </Link>
         </Menu.Item>
         <Menu.Item>
-            <Link href="/case">
+            <Link href="/case?type=1">
                 私宅类
             </Link>
         </Menu.Item>

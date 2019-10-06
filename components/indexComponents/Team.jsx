@@ -62,7 +62,7 @@ const Team = () => {
                     color:#fff;
                     height:540px;
                     flex-shrink: 0;
-                    border-bottom: 5px solid #fff;
+                    border-bottom: 10px solid #fff;
                 }
                 .right{
                     flex:1;
