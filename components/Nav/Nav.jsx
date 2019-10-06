@@ -29,40 +29,53 @@ const ABOUT_MENU = (
 const PRODUCT_MENU = (
     <Menu>
         <Menu.Item>
-
-            <a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/">
-                窗帘
-      </a>
+            <Link href="/product?id=0">
+                <a>
+                    窗帘
+                </a>
+            </Link>
         </Menu.Item>
         <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/">
-                灯具
-      </a>
+            <Link href="/product?id=1">
+                <a>
+                    灯具
+                </a>
+            </Link>
         </Menu.Item>
         <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
-                地毯
-      </a>
+            <Link href="/product?id=1">
+                <a>
+                    地毯
+                </a>
+            </Link>
         </Menu.Item>
         <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
-                花艺
-      </a>
+            <Link href="/product?id=1">
+                <a>
+                    花艺
+                </a>
+            </Link>
         </Menu.Item>
         <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
-                画品
-      </a>
+            <Link href="/product?id=1">
+                <a>
+                    画品
+                </a>
+            </Link>
         </Menu.Item>
         <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
+            <Link href="/product?id=1">
+                <a>
+                    家具
+                </a>
+            </Link>
+        </Menu.Item>
+        <Menu.Item>
+            <Link href="/product?id=1">
+                <a>
                 家具
-      </a>
-        </Menu.Item>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
-                饰品
-      </a>
+                </a>
+            </Link>
         </Menu.Item>
     </Menu>
 )
@@ -116,7 +129,9 @@ class Nav extends React.Component {
                     <Link href="/">
                         <a className="">首页</a>
                     </Link>
-                    <a className="" href="#md_about">关于</a>
+                    <Link href="/#md_about">
+                        <a className="">关于</a>
+                    </Link>
                     <Dropdown overlay={CASE_DROP_DOWN}>
                         <a className="">案例</a>
                     </Dropdown>
@@ -126,9 +141,13 @@ class Nav extends React.Component {
                     <Dropdown overlay={PRODUCT_MENU}>
                         <a className="">产品</a>
                     </Dropdown>
-                    <a className="" href="#md_team">团队</a>
-                    <a className="" href="#md_connect">联系</a>
-                </div>
+                    <Link href="/#md_team">
+                        <a className="">团队</a>
+                    </Link>
+                    <Link href="/#md_connect">
+                        <a className="">联系</a>
+                    </Link>
+=                </div>
             </div>
         )
     }

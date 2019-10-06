@@ -5,26 +5,26 @@ const LIST = [
     {
         img: 'http://www.cqdmjz.com/uploadfile/2017/0426/20170426113552503.jpg',
         name: '清新地中海',
-        id:'0',
+        id: '0',
     },
     {
         img: 'http://www.cqdmjz.com/uploadfile/2017/0426/20170426113552503.jpg',
         name: '清新地中海',
-        id:'0',
+        id: '2',
     },
     {
         img: 'http://www.cqdmjz.com/uploadfile/2017/0426/20170426113552503.jpg',
         name: '清新地中海',
-        id:'0',
+        id: '1',
     },
     {
         img: 'http://www.cqdmjz.com/uploadfile/2017/0426/20170426113552503.jpg',
         name: '清新地中海',
-        id:'0',
+        id: '3',
     }, {
         img: 'http://www.cqdmjz.com/uploadfile/2017/0426/20170426113552503.jpg',
         name: '清新地中海',
-        id:'0',
+        id: '4',
     }
 ]
 class Case extends React.Component {
@@ -33,10 +33,16 @@ class Case extends React.Component {
         const { type } = query;
         return { type };
     }
+    handleLoad = (e) => {
+        const el = e.target;
+        const w = el.width;
+        const h = el.height;
+        console.log(w, h);
+    }
     renderItem(item) {
-        const { img, name,id } = item;
+        const { img, name, id } = item;
         return (
-            <div className="item_wrap">
+            <div className="item_wrap" key={id}>
                 <style jsx>{`
                     .item_wrap{
                         width:33.33%;
@@ -61,10 +67,18 @@ class Case extends React.Component {
                         padding-bottom: 10px;
                         text-align: center;
                     }
+                    .img_wrap{
+                        height:310px;
+                        display:flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
                 `}</style>
-                <Link href={`/caseDetail?id=id`}>
+                <Link href={`/caseDetail?id=${id}`}>
                     <a className="item">
-                        <img src={img} />
+                        <div className="img_wrap">
+                            <img src={img} onLoad={e => this.handleLoad(e)} />
+                        </div>
                         <div className="title">{name}</div>
                     </a>
                 </Link>
@@ -85,7 +99,7 @@ class Case extends React.Component {
                 `}</style>
                 <Banner bgImg={'../static/img/case_banner.jpg'} />
                 <div className="wrap">
-                    {LIST.map(this.renderItem)}
+                    {LIST.map((item) => this.renderItem(item))}
                 </div>
             </React.Fragment>
         )
