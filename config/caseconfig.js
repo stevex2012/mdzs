@@ -223,10 +223,13 @@ const caseConfig = {
             id: '13',
         },
         {
-            img: 'http://www.cqdmjz.com/uploadfile/2017/0426/20170426113552503.jpg',
+            img: '../static/img/case/yjl (1).jpg',
             name: '雅居乐',
             time:'2017-04-23 15:49:39',
-            imgList:[],
+            imgList:[
+                '../static/img/case/yjl (1).jpg',
+                '../static/img/case/yjl (2).jpg',
+            ],
             id: '14',
         },
         {
