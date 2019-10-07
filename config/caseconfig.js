@@ -197,10 +197,17 @@ const caseConfig = {
             id: '11',
         },
         {
-            img: 'http://www.cqdmjz.com/uploadfile/2017/0426/20170426113552503.jpg',
+            img: '../static/img/case/syczh (1).jpg',
             name: '山语城中户',
             time:'2017-04-23 15:49:39',
-            imgList:[],
+            imgList:[
+                '../static/img/case/syczh (1).jpg',
+                '../static/img/case/syczh (2).jpg',
+                '../static/img/case/syczh (3).jpg',
+                '../static/img/case/syczh (4).jpg',
+                '../static/img/case/syczh (5).jpg',
+                '../static/img/case/syczh (6).jpg',
+            ],
             id: '12',
         },
         {
