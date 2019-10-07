@@ -93,10 +93,19 @@ const caseConfig = {
             id: '4',
         },
         {
-            img: 'http://www.cqdmjz.com/uploadfile/2017/0426/20170426113552503.jpg',
+            img: '../static/img/case/hjxj (1).jpg',
             name: '华锦新城',
             time:'2017-04-23 15:49:39',
-            imgList:[],
+            imgList:[
+                '../static/img/case/hjxj (1).jpg',
+                '../static/img/case/hjxj (2).jpg',
+                '../static/img/case/hjxj (3).jpg',
+                '../static/img/case/hjxj (4).jpg',
+                '../static/img/case/hjxj (5).jpg',
+                '../static/img/case/hjxj (6).jpg',
+                '../static/img/case/hjxj (7).jpg',
+                '../static/img/case/hjxj (8).jpg',
+            ],
             id: '5',
         },
         {
