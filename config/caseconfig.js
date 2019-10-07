@@ -247,10 +247,26 @@ const caseConfig = {
             id: '15',
         },
         {
-            img: 'http://www.cqdmjz.com/uploadfile/2017/0426/20170426113552503.jpg',
+            img: '../static/img/case/ypsy (1).jpg',
             name: '御品尚源',
             time:'2017-04-23 15:49:39',
-            imgList:[],
+            imgList:[
+                '../static/img/case/ypsy (1).jpg',
+                '../static/img/case/ypsy (2).jpg',
+                '../static/img/case/ypsy (3).jpg',
+                '../static/img/case/ypsy (4).jpg',
+                '../static/img/case/ypsy (5).jpg',
+                '../static/img/case/ypsy (6).jpg',
+                '../static/img/case/ypsy (7).jpg',
+                '../static/img/case/ypsy (8).jpg',
+                '../static/img/case/ypsy (9).jpg',
+                '../static/img/case/ypsy (10).jpg',
+                '../static/img/case/ypsy (12).jpg',
+                '../static/img/case/ypsy (13).jpg',
+                '../static/img/case/ypsy (14).jpg',
+                '../static/img/case/ypsy (15).jpg',
+                '../static/img/case/ypsy (16).jpg',
+            ],
             id: '16',
         }
 
