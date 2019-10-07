@@ -81,9 +81,14 @@ class Nav extends React.Component {
                     font-size:16px;
                 }
                 .logo{
-                    background: url(../../static/img/img.jpg) no-repeat;
                     width: 224px;
                     height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .logo img{
+                    width:100%;
                 }
                 {/* a:hover{
                     border-bottom:3px solid red;
@@ -101,7 +106,9 @@ class Nav extends React.Component {
                         <a className="">案例</a>
                     </Dropdown>
                     <Link href="/">
-                        <a className="logo"></a>
+                        <a className="logo">
+                            <img src="../../static/img/logo.jpg" alt=''/>
+                        </a>
                     </Link>
                     <Dropdown overlay={PRODUCT_MENU}>
                         <a className="">产品</a>
