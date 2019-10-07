@@ -9,6 +9,7 @@ class Case extends React.Component {
         const { id } = query;
         return { id };
     }
+    
     render() {
         const {id} = this.props;
         return (
@@ -18,6 +19,14 @@ class Case extends React.Component {
                         background:#fff;
                         width:1200px;
                         margin:0 auto;
+                    }
+                    .item{
+                        display:flex;
+                        flex-wrap: wrap;
+                    }
+                    .item img{
+                        width:50%;
+                        padding:10px;
                     }
                 `}</style>
                 <style global='true'>{`
@@ -29,9 +38,14 @@ class Case extends React.Component {
                 <Tabs defaultActiveKey={id}>
                     {
                         productsConfig.map(tab => {
-                            const { id, txt } = tab;
+                            const { id, txt,imgList } = tab;
+                            console.log('imgList',imgList);
                             return <TabPane tab={txt} key={id}>
-                                {txt}
+                                <div className="item">
+                                    {imgList.map(item=>{
+                                        return <img src={item} alt='' key={item}/>
+                                    })}
+                                </div>
                         </TabPane>
                         })
                     }
