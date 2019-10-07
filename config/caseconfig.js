@@ -211,10 +211,15 @@ const caseConfig = {
             id: '12',
         },
         {
-            img: 'http://www.cqdmjz.com/uploadfile/2017/0426/20170426113552503.jpg',
+            img: '../static/img/case/xjmd (1).jpg',
             name: '香江美地',
             time:'2017-04-23 15:49:39',
-            imgList:[],
+            imgList:[
+                '../static/img/case/xjmd (1).jpg',
+                '../static/img/case/xjmd (2).jpg',
+                '../static/img/case/xjmd (3).jpg',
+                '../static/img/case/xjmd (4).jpg',
+            ],
             id: '13',
         },
         {
