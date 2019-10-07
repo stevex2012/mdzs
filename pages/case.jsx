@@ -1,32 +1,8 @@
 import React from 'react';
 import { Banner, H1 } from '../components';
 import Link from 'next/link';
-const LIST = [
-    {
-        img: 'http://www.cqdmjz.com/uploadfile/2017/0426/20170426113552503.jpg',
-        name: '清新地中海',
-        id: '0',
-    },
-    {
-        img: 'http://www.cqdmjz.com/uploadfile/2017/0426/20170426113552503.jpg',
-        name: '清新地中海',
-        id: '2',
-    },
-    {
-        img: 'http://www.cqdmjz.com/uploadfile/2017/0426/20170426113552503.jpg',
-        name: '清新地中海',
-        id: '1',
-    },
-    {
-        img: 'http://www.cqdmjz.com/uploadfile/2017/0426/20170426113552503.jpg',
-        name: '清新地中海',
-        id: '3',
-    }, {
-        img: 'http://www.cqdmjz.com/uploadfile/2017/0426/20170426113552503.jpg',
-        name: '清新地中海',
-        id: '4',
-    }
-]
+import caseConfig from '../config/caseconfig.js';
+// 0  工装  1，私装
 class Case extends React.Component {
     static async getInitialProps({ query }) {
         //获取 query type战绩，0--工装类 1--私宅类
@@ -39,7 +15,7 @@ class Case extends React.Component {
         const h = el.height;
         console.log(w, h);
     }
-    renderItem(item) {
+    renderItem(item,type) {
         const { img, name, id } = item;
         return (
             <div className="item_wrap" key={id}>
@@ -74,7 +50,7 @@ class Case extends React.Component {
                         justify-content: center;
                     }
                 `}</style>
-                <Link href={`/caseDetail?id=${id}`}>
+                <Link href={`/caseDetail?id=${id}&type=${type}`}>
                     <a className="item">
                         <div className="img_wrap">
                             <img src={img} onLoad={e => this.handleLoad(e)} />
@@ -86,6 +62,8 @@ class Case extends React.Component {
         )
     }
     render() {
+        const { type  } = this.props;
+        const list = caseConfig[type]
         return (
             <React.Fragment>
                 <style jsx>{`
@@ -99,7 +77,7 @@ class Case extends React.Component {
                 `}</style>
                 <Banner bgImg={'../static/img/case_banner.jpg'} />
                 <div className="wrap">
-                    {LIST.map((item) => this.renderItem(item))}
+                    {list.map((item) => this.renderItem(item,type))}
                 </div>
             </React.Fragment>
         )

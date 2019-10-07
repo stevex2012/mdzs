@@ -1,15 +1,19 @@
 import React from 'react';
+import caseConfig from '../config/caseconfig.js';
 class caseDetail extends React.Component{
     static async getInitialProps({ query }) {
         //获取 query type战绩，0--工装类 1--私宅类
-        const { id } = query;
-        return { id };
+        const { id, type } = query;
+        return { id,type };
     }
     //根据id获取数据
-    getData(id){
-
+    getData(id,type){
+        return caseConfig[type].find(item=>item.id == id);
     }
     render(){
+        const { id, type } = this.props;
+        const data = this.getData(id,type);
+        const { name,time,imgList } = data;
         return(
                 <div className="wrap">
                     <style jsx>{`
@@ -41,10 +45,12 @@ class caseDetail extends React.Component{
                             width:800px;
                         }
                     `}</style>
-                    <div className="title">现代简约-大观天下</div>
-                    <div className="time">2017-04-23 19:00:15</div>
+                    <div className="title">{name}</div>
+                    <div className="time">{time}</div>
                     <div className="img_wrap">
-                        <img src="http://www.cqdmjz.com/uploadfile/2017/0427/20170427112918811.jpg" />
+                        {imgList.map(item=>{
+                            return <img src={item} />
+                        })}
                     </div>
                 </div>
         )

@@ -1,7 +1,9 @@
 import React from 'react';
 import Link from 'next/link'
+import productsConfig from '../../config/productsConfig';
 import { Menu, Dropdown, Icon } from 'antd';
 const { SubMenu } = Menu;
+
 const ABOUT_MENU = (
     <Menu>
         <Menu.Item>
@@ -28,55 +30,18 @@ const ABOUT_MENU = (
 );
 const PRODUCT_MENU = (
     <Menu>
-        <Menu.Item>
-            <Link href="/product?id=0">
-                <a>
-                    窗帘
-                </a>
-            </Link>
-        </Menu.Item>
-        <Menu.Item>
-            <Link href="/product?id=1">
-                <a>
-                    灯具
-                </a>
-            </Link>
-        </Menu.Item>
-        <Menu.Item>
-            <Link href="/product?id=1">
-                <a>
-                    地毯
-                </a>
-            </Link>
-        </Menu.Item>
-        <Menu.Item>
-            <Link href="/product?id=1">
-                <a>
-                    花艺
-                </a>
-            </Link>
-        </Menu.Item>
-        <Menu.Item>
-            <Link href="/product?id=1">
-                <a>
-                    画品
-                </a>
-            </Link>
-        </Menu.Item>
-        <Menu.Item>
-            <Link href="/product?id=1">
-                <a>
-                    家具
-                </a>
-            </Link>
-        </Menu.Item>
-        <Menu.Item>
-            <Link href="/product?id=1">
-                <a>
-                家具
-                </a>
-            </Link>
-        </Menu.Item>
+        {
+            productsConfig.map(item => {
+                const { id, txt } = item;
+                return <Menu.Item>
+                    <Link href={`/product?id=${id}`}>
+                        <a>
+                            {txt}
+                        </a>
+                    </Link>
+                </Menu.Item>
+            })
+        }
     </Menu>
 )
 const CASE_DROP_DOWN = (
@@ -147,7 +112,7 @@ class Nav extends React.Component {
                     <Link href="/#md_connect">
                         <a className="">联系</a>
                     </Link>
-=                </div>
+                </div>
             </div>
         )
     }

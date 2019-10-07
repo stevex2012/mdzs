@@ -1,38 +1,16 @@
 import React from 'react';
 import { Tabs } from 'antd';
 const { TabPane } = Tabs;
-const TABS = [
-    {
-        txt: '窗帘',
-        id: 0
-    },
-    {
-        txt: '灯具',
-        id: 1
-    },
-    {
-        txt: '地毯',
-        id: 2
-    },
-    {
-        txt: '花艺',
-        id: 3
-    },
-    {
-        txt: '画品',
-        id: 4
-    },
-    {
-        txt: '家具',
-        id: 5
-    },
-    {
-        txt: '家具',
-        id: 6
-    },
-]
+import productsConfig from '../config/productsConfig';
+
 class Case extends React.Component {
+    static async getInitialProps({ query }) {
+        //获取 query type战绩，0--工装类 1--私宅类
+        const { id } = query;
+        return { id };
+    }
     render() {
+        const {id} = this.props;
         return (
             <div className="wrap">
                 <style jsx>{`
@@ -42,9 +20,15 @@ class Case extends React.Component {
                         margin:0 auto;
                     }
                 `}</style>
-                <Tabs defaultActiveKey="1">
+                <style global='true'>{`
+                    .ant-tabs-nav-scroll{
+                        display:flex;
+                        justify-content: center;
+                    }
+                `}</style>
+                <Tabs defaultActiveKey={id}>
                     {
-                        TABS.map(tab => {
+                        productsConfig.map(tab => {
                             const { id, txt } = tab;
                             return <TabPane tab={txt} key={id}>
                                 {txt}
