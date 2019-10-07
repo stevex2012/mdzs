@@ -49,7 +49,7 @@ class caseDetail extends React.Component{
                     <div className="time">{time}</div>
                     <div className="img_wrap">
                         {imgList.map(item=>{
-                            return <img src={item} />
+                            return <img src={item} key={item}/>
                         })}
                     </div>
                 </div>

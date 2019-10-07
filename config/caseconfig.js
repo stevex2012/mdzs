@@ -29,10 +29,19 @@ const caseConfig = {
     ],
     '1':[
         {
-            img: 'http://www.cqdmjz.com/uploadfile/2017/0426/20170426113552503.jpg',
+            img: '../static/img/case/cjyy (1).jpg',
             name: '春江怡园',
             time:'2017-04-23 15:49:39',
-            imgList:[],
+            imgList:[
+                '../static/img/case/cjyy (1).jpg',
+                '../static/img/case/cjyy (2).jpg',
+                '../static/img/case/cjyy (3).jpg',
+                '../static/img/case/cjyy (4).jpg',
+                '../static/img/case/cjyy (5).jpg',
+                '../static/img/case/cjyy (6).jpg',
+                '../static/img/case/cjyy (7).jpg',
+                '../static/img/case/cjyy (8).jpg',
+            ],
             id: '0',
         },
         {
