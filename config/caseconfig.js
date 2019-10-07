@@ -60,17 +60,24 @@ const caseConfig = {
             id: '1',
         },
         {
-            img: 'http://www.cqdmjz.com/uploadfile/2017/0426/20170426113552503.jpg',
+            img: '../static/img/case/gyyh (1).jpg',
             name: '公园一号',
             time:'2017-04-23 15:49:39',
-            imgList:[],
+            imgList:[
+                '../static/img/case/gyyh (1).jpg',
+                '../static/img/case/gyyh (2).jpg',
+                '../static/img/case/gyyh (3).jpg',
+            ],
             id: '2',
         },
         {
-            img: 'http://www.cqdmjz.com/uploadfile/2017/0426/20170426113552503.jpg',
+            img: '../static/img/case/gchy (1).jpg',
             name: '桂城花园',
             time:'2017-04-23 15:49:39',
-            imgList:[],
+            imgList:[
+                '../static/img/case/gchy (1).jpg',
+                '../static/img/case/gchy (2).jpg',
+            ],
             id: '3',
         },
         {
