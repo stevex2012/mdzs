@@ -45,10 +45,18 @@ const caseConfig = {
             id: '0',
         },
         {
-            img: 'http://www.cqdmjz.com/uploadfile/2017/0426/20170426113552503.jpg',
+            img: '../static/img/case/dotx (7).jpg',
             name: '东湖天下',
             time:'2017-04-23 15:49:39',
-            imgList:[],
+            imgList:[
+                '../static/img/case/dotx (1).jpg',
+                '../static/img/case/dotx (2).jpg',
+                '../static/img/case/dotx (3).jpg',
+                '../static/img/case/dotx (4).jpg',
+                '../static/img/case/dotx (5).jpg',
+                '../static/img/case/dotx (6).jpg',
+                '../static/img/case/dotx (7).jpg',
+            ],
             id: '1',
         },
         {

@@ -48,6 +48,7 @@ class Case extends React.Component {
                         display:flex;
                         align-items: center;
                         justify-content: center;
+                        overflow:hidden;
                     }
                 `}</style>
                 <Link href={`/caseDetail?id=${id}&type=${type}`}>
