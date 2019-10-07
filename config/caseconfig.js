@@ -182,10 +182,18 @@ const caseConfig = {
             id: '10',
         },
         {
-            img: 'http://www.cqdmjz.com/uploadfile/2017/0426/20170426113552503.jpg',
+            img: '../static/img/case/syc (1).jpg',
             name: '山语城',
             time:'2017-04-23 15:49:39',
-            imgList:[],
+            imgList:[
+                '../static/img/case/syc (1).jpg',
+                '../static/img/case/syc (2).jpg',
+                '../static/img/case/syc (3).jpg',
+                '../static/img/case/syc (4).jpg',
+                '../static/img/case/syc (5).png',
+                '../static/img/case/syc (6).png',
+                '../static/img/case/syc (7).png',
+            ],
             id: '11',
         },
         {
