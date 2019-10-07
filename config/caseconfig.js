@@ -109,10 +109,13 @@ const caseConfig = {
             id: '5',
         },
         {
-            img: 'http://www.cqdmjz.com/uploadfile/2017/0426/20170426113552503.jpg',
+            img: '../static/img/case/hr24 (1).jpg',
             name: '华润24',
             time:'2017-04-23 15:49:39',
-            imgList:[],
+            imgList:[
+                '../static/img/case/hr24 (1).jpg',
+                '../static/img/case/hr24 (2).jpg'
+            ],
             id: '6',
         },
         {
