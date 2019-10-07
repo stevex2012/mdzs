@@ -119,10 +119,18 @@ const caseConfig = {
             id: '6',
         },
         {
-            img: 'http://www.cqdmjz.com/uploadfile/2017/0426/20170426113552503.jpg',
+            img: '../static/img/case/jzc (1).jpg',
             name: '江城著',
             time:'2017-04-23 15:49:39',
-            imgList:[],
+            imgList:[
+                '../static/img/case/jzc (1).jpg',
+                '../static/img/case/jzc (2).jpg',
+                '../static/img/case/jzc (3).png',
+                '../static/img/case/jzc (4).png',
+                '../static/img/case/jzc (5).png',
+                '../static/img/case/jzc (6).png',
+                '../static/img/case/jzc (7).png',
+            ],
             id: '7',
         },{
             img: 'http://www.cqdmjz.com/uploadfile/2017/0426/20170426113552503.jpg',
