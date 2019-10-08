@@ -45,21 +45,58 @@ const PRODUCT_MENU = (
     </Menu>
 )
 const CASE_DROP_DOWN = (
-    <Menu>
-        <Menu.Item>
+    <React.Fragment>
+        <Menu.Item key="gz">
             <Link href="/case?type=0" >
                 工装类
             </Link>
         </Menu.Item>
-        <Menu.Item>
+        <Menu.Item key="sz">
             <Link href="/case?type=1">
                 私宅类
             </Link>
         </Menu.Item>
-    </Menu>
+    </React.Fragment>
 )
+function rendermenu() {
+    return (
+        <Menu mode="horizontal">
+            <Menu.Item key="mail">
+                <Icon type="mail" />
+                Navigation One
+        </Menu.Item>
+            <Menu.Item key="app" disabled>
+                <Icon type="appstore" />
+                Navigation Two
+        </Menu.Item>
+            <SubMenu
+                title={
+                    <span className="submenu-title-wrapper">
+                        <Icon type="setting" />
+                        Navigation Three - Submenu
+            </span>
+                }
+            >
+                <Menu.ItemGroup title="Item 1">
+                    <Menu.Item key="setting:1">Option 1</Menu.Item>
+                    <Menu.Item key="setting:2">Option 2</Menu.Item>
+                </Menu.ItemGroup>
+                <Menu.ItemGroup title="Item 2">
+                    <Menu.Item key="setting:3">Option 3</Menu.Item>
+                    <Menu.Item key="setting:4">Option 4</Menu.Item>
+                </Menu.ItemGroup>
+            </SubMenu>
+            <Menu.Item key="alipay">
+                <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
+                    Navigation Four - Link
+          </a>
+            </Menu.Item>
+        </Menu>
+    )
+}
 class Nav extends React.Component {
     render() {
+        // return rendermenu();
         return (
             <div className="auto top1">
                 <style jsx>{`
@@ -67,11 +104,13 @@ class Nav extends React.Component {
                     height: 108px;
                 }
                 .auto {
-                    width: 1200px;
-                    margin: 0 auto;
+                   
                     overflow: hidden;
+                    border-bottom: 2px solid #eee;
                 }
                 .nav{
+                    width: 1200px;
+                    margin: 0 auto;
                     display: flex;
                     justify-content: space-around;
                     align-items: center;
@@ -96,29 +135,61 @@ class Nav extends React.Component {
                 
                 `}</style>
                 <div className="right nav">
-                    <Link href="/">
-                        <a className="">首页</a>
-                    </Link>
-                    <Link href="/#md_about">
-                        <a className="">关于</a>
-                    </Link>
-                    <Dropdown overlay={CASE_DROP_DOWN}>
-                        <a className="">案例</a>
-                    </Dropdown>
-                    <Link href="/">
-                        <a className="logo">
-                            <img src="../../static/img/logo.jpg" alt=''/>
-                        </a>
-                    </Link>
-                    <Dropdown overlay={PRODUCT_MENU}>
-                        <a className="">产品</a>
-                    </Dropdown>
-                    <Link href="/#md_team">
-                        <a className="">团队</a>
-                    </Link>
-                    <Link href="/#md_connect">
-                        <a className="">联系</a>
-                    </Link>
+                    <Menu mode="horizontal">
+                        <Menu.Item key="index">
+                            <Link href="/">
+                                <a className="">首页</a>
+                            </Link>
+                        </Menu.Item>
+                        <Menu.Item key="about">
+                            <Link href="/#md_about">
+                                <a className="">关于</a>
+                            </Link>
+                        </Menu.Item>
+                        <SubMenu key="mail" title="案例">
+                            <Menu.Item key="setting:1">
+                                <Link href="/case?type=0" >
+                                    工装类
+                                </Link>
+                            </Menu.Item>
+                            <Menu.Item key="setting:2">
+                                <Link href="/case?type=0" >
+                                私宅类
+                                </Link>
+                            </Menu.Item>
+                        </SubMenu>
+
+                        {/* <Dropdown overlay={CASE_DROP_DOWN}>
+                            <a className="">案例</a>
+                        </Dropdown> */}
+                        <Menu.Item key="log">
+                            <Link href="/">
+                                <a className="logo">
+                                    <img src="../../static/img/logo.jpg" alt='' />
+                                </a>
+                            </Link>
+                        </Menu.Item>
+                        <SubMenu key="product" title="产品">
+                            <Menu.Item key="setting:1">Option 1</Menu.Item>
+                            <Menu.Item key="setting:2">Option 2</Menu.Item>
+                        </SubMenu>
+
+                        {/* <Dropdown overlay={PRODUCT_MENU}>
+                            <a className="">产品</a>
+                        </Dropdown> */}
+                        <Menu.Item key="team">
+                            <Link href="/#md_team">
+                                <a className="">团队</a>
+                            </Link>
+                        </Menu.Item>
+                        <Menu.Item key="connect">
+                            <Link href="/#md_connect">
+                                <a className="">联系</a>
+                            </Link>
+                        </Menu.Item>
+
+
+                    </Menu>
                 </div>
             </div>
         )
