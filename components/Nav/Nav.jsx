@@ -2,63 +2,9 @@ import React from 'react';
 import Link from 'next/link'
 import productsConfig from '../../config/productsConfig';
 import { Menu, Dropdown, Icon } from 'antd';
-import { relative } from 'upath';
 const { SubMenu } = Menu;
 
-const ABOUT_MENU = (
-    <Menu>
-        <Menu.Item>
-            <Link href="/about">
-                <a >关于我们</a>
-            </Link>
-        </Menu.Item>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/">
-                服务领域
-      </a>
-        </Menu.Item>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
-                新闻中心
-      </a>
-        </Menu.Item>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
-                人才引进
-      </a>
-        </Menu.Item>
-    </Menu>
-);
-const PRODUCT_MENU = (
-    <Menu>
-        {
-            productsConfig.map(item => {
-                const { id, txt } = item;
-                return <Menu.Item>
-                    <Link href={`/product?id=${id}`}>
-                        <a>
-                            {txt}
-                        </a>
-                    </Link>
-                </Menu.Item>
-            })
-        }
-    </Menu>
-)
-const CASE_DROP_DOWN = (
-    <Menu>
-        <Menu.Item key="gz">
-            <Link href="/case?type=0" >
-                工装类
-            </Link>
-        </Menu.Item>
-        <Menu.Item key="sz">
-            <Link href="/case?type=1">
-                私宅类
-            </Link>
-        </Menu.Item>
-    </Menu >
-)
+
 
 class Nav extends React.Component {
     constructor(props) {
@@ -74,12 +20,22 @@ class Nav extends React.Component {
         this.refcp = React.createRef();
     }
     componentDidMount() {
-        console.log('xxxxxx')
-        const path = window.location.href;
+        const path = window.location.pathname;
         this.ref.current.offsetWidth;
+        let ref = '';
+        switch (path) {
+            case '/case':
+                ref = this.refal;
+                break;
+            case '/product':
+                ref = this.refcp;
+                break;
+            default:
+                ref = this.ref
+        }
         this.setState({
-            orginW: this.ref.current.offsetWidth,
-            orginL: this.ref.current.offsetLeft
+            orginW: ref.current.offsetWidth,
+            orginL: ref.current.offsetLeft
         })
     }
     handleEnter = (e) => {
@@ -148,10 +104,11 @@ class Nav extends React.Component {
                 }
                 .logo{
                     width: 224px;
-                    height: 50px;
                     display: flex !important;
                     align-items: center;
                     justify-content: center;
+                    padding:0 !important;
+                    margin:0 20px;
                 }
                 .logo img{
                     width:100%;
@@ -184,7 +141,7 @@ class Nav extends React.Component {
                             <a className="nan_item" ref={this.ref} onMouseEnter={this.handleEnter} onClick={this.handleClick}>首页</a>
                         </Link>
                         <Link href="/#md_about">
-                            <a className="nan_item" onMouseEnter={this.handleEnter} onClick={this.handleClick}>关于</a>
+                            <a className="nan_item" onMouseEnter={this.handleEnter} >关于</a>
                         </Link>
                         <Dropdown overlay={<Menu>
                             <Menu.Item key="gz">
@@ -206,14 +163,27 @@ class Nav extends React.Component {
                             </a>
                         </Link>
 
-                        <Dropdown overlay={PRODUCT_MENU}>
-                            <a className="nan_item" onMouseEnter={this.handleEnter}>产品</a>
+                        <Dropdown overlay={<Menu>
+                            {
+                                productsConfig.map(item => {
+                                    const { id, txt } = item;
+                                    return <Menu.Item key={id}>
+                                        <Link href={`/product?id=${id}`}>
+                                            <a onClick={() => this.subItemClick(this.refcp.current)} >
+                                                {txt}
+                                            </a>
+                                        </Link>
+                                    </Menu.Item>
+                                })
+                            }
+                        </Menu>}>
+                            <a className="nan_item" onMouseEnter={this.handleEnter} ref={this.refcp}>产品</a>
                         </Dropdown>
                         <Link href="/#md_team">
-                            <a className="nan_item" onMouseEnter={this.handleEnter} onClick={this.handleClick}>团队</a>
+                            <a className="nan_item" onMouseEnter={this.handleEnter} >团队</a>
                         </Link>
                         <Link href="/#md_connect">
-                            <a className="nan_item" onMouseEnter={this.handleEnter} onClick={this.handleClick}>联系</a>
+                            <a className="nan_item" onMouseEnter={this.handleEnter} >联系</a>
                         </Link>
                     </div>
                 </div>

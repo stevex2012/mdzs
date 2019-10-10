@@ -102,7 +102,6 @@ const Team = () => {
                     border-right: none;
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-between;
                 }
                 .dddd{
                     position:absolute;
@@ -146,7 +145,7 @@ const Team = () => {
                 <div className="right">
                     {R_DATA.map(item => {
                         const { img, name, job, motto } = item;
-                        return <div className="item">
+                        return <div className="item" key={motto}>
                             <div className="img_box"><img src={img} /></div>
                             <div className="txt_box">
                                 <div>{job}</div>

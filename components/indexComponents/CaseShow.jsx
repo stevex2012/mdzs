@@ -137,18 +137,18 @@ const CaseShow = () => {
                         <img src={bg.img} />
                     </div>
                     <div className="bottom">
-                        {bottom.map(item=>{
+                        {bottom.map((item,idx)=>{
                             const { img } = item;
-                            return <div className="item">
+                            return <div className="item" key={idx}>
                                 <img src={img} />;
                             </div>
                         })}
                     </div>
                 </div>
                 <div className="right">
-                    {right.map(item=>{
+                    {right.map((item,idx)=>{
                         const { img } = item;
-                        return <div className="item">
+                        return <div className="item" key={idx}>
                         <img src={img} />
                         </div>
                     })}

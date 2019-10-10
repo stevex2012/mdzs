@@ -41,7 +41,6 @@ function Footer() {
                 .tel{
                     font-size: 14px;
                     color:#333;
-                    margin-top:15px;
                 }
             `}</style>
             <div className="left item">
@@ -50,10 +49,10 @@ function Footer() {
             </div>
             <div className="right item">
                 <h6 className="title">联系我们</h6>
-                <div className="addr">重庆市江北区五里店五江路13号（重庆总公司）</div>
-                <div className="addr">重庆市渝中区万科景程3幢（渝中分公司）</div>
-                <div className="addr">重庆市巴南区界石东城大道（巴南分公司）</div>
-                <div className="tel">电话：023-81305901</div>
+                <div className="addr">地址：渝北-北环-龙湖MOCO1栋-21-22</div>
+                <div className="addr">邮箱：99959703@qq.com</div>
+                <div className="addr">手机：13436092281</div>
+                <div className="tel">电话：023-63018362</div>
             </div>
         </div>
     )

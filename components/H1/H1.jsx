@@ -2,13 +2,12 @@ import React from 'react';
 
 function H1({ title, subTitle }) {
     return (
-        <div className="title">
+        <React.Fragment>
             <style jsx>{`
                 .title{
                     height: 60px;
                     position: relative;
                     overflow: hidden;
-                    margin-top: 70px;
 
                                 }
                                 .title h3{
@@ -44,14 +43,22 @@ function H1({ title, subTitle }) {
                 .c_red{
                     color:#ff3333
                 }
+                .pad{
+                    height:70px;
+                }
             `}</style>
-            <h3>
-                <span>{title}</span>
-                
-                <div>{subTitle}</div>
-            </h3>
-            <div className="line"></div>
-        </div>
+
+            <div className="pad" />
+            <div className="title">
+
+                <h3>
+                    <span>{title}</span>
+
+                    <div>{subTitle}</div>
+                </h3>
+                <div className="line"></div>
+            </div>
+        </React.Fragment>
     )
 }
 
