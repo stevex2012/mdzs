@@ -40,10 +40,10 @@ const R_DATA = [
         motto: '设计当以自然为师，以万物为友，以苍生为念。上善若水，静水流深。'
     },
     {
-        img: 'http://www.cqdmjz.com/statics/images/images/sjs03.jpg',
-        name: '乔乔',
-        job: '首席设计师',
-        motto: 'xxxxxx'
+        img: '../../static/img/rsx.jpg',
+        name: '任思雄',
+        job: '设计研发总监',
+        motto: '优质的室内软装在于精神层面上的表现力和感染力。'
     },
 ]
 const Team = () => {
