@@ -6,7 +6,10 @@ function Banner(props) {
         <div className="banner">
             <style jsx>{`
                 .banner{
-                    height: 508px;
+                    height: 700px;
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
                 }
             `}</style>
             <img src={bgImg} alt=""/>
