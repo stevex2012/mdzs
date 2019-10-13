@@ -159,7 +159,7 @@ class Nav extends React.Component {
                         </Dropdown>
                         <Link href="/">
                             <a className="logo nan_item" onMouseEnter={this.handleEnter}>
-                                <img src="../../static/img/logo.jpg" alt='' />
+                                <img src="../../static/img/logo.jpg" alt='' width="224"/>
                             </a>
                         </Link>
 

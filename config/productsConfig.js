@@ -124,7 +124,6 @@ const config = [
         txt: '画品',
         id: 4,
         imgList:[
-            '../static/img/product/hp/hp (1).jpg',
             '../static/img/product/hp/hp (2).jpg',
             '../static/img/product/hp/hp (3).jpg',
             '../static/img/product/hp/hp (4).jpg',

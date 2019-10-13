@@ -5,57 +5,57 @@ import H1 from '../H1/H1';
 //工装数据
 const G_Z_DATA = {
     bg: {
-        img: '../../static/img/caseshow/gong/bg.png',
+        img: '../../static/img/caseshow/gong/1.png',
     },
     bottom: [
         {
-            img: '../../static/img/caseshow/gong/bg.png',
+            img: '../../static/img/caseshow/gong/2.jpg',
         },
         {
-            img: '../../static/img/caseshow/gong/bg.png',
+            img: '../../static/img/caseshow/gong/3.jpg',
         }
     ],
     right: [
         {
-            img: '../../static/img/caseshow/gong/bg.png',
+            img: '../../static/img/caseshow/gong/4.png',
         },
         {
-            img: '../../static/img/caseshow/gong/bg.png',
+            img: '../../static/img/caseshow/gong/5.png',
         },
         {
-            img: '../../static/img/caseshow/gong/bg.png',
+            img: '../../static/img/caseshow/gong/6.jpg',
         }
     ]
 }
 //私装数据
 const S_Z_DATA = {
     bg: {
-        img: '../../static/img/caseshow/si/bg.png',
+        img: '../../static/img/caseshow/si/1.jpg',
     },
     bottom: [
         {
-            img: '../../static/img/caseshow/si/bg.png',
+            img: '../../static/img/caseshow/si/2.jpg',
         },
         {
-            img: '../../static/img/caseshow/si/bg.png',
+            img: '../../static/img/caseshow/si/3.jpg',
         }
     ],
     right: [
         {
-            img: '../../static/img/caseshow/si/bg.png',
+            img: '../../static/img/caseshow/si/4.jpg',
         },
         {
-            img: '../../static/img/caseshow/si/bg.png',
+            img: '../../static/img/caseshow/si/5.png',
         },
         {
-            img: '../../static/img/caseshow/si/bg.png',
+            img: '../../static/img/caseshow/si/6.jpg',
         }
     ]
 }
 //所有数据
 const ALL_DATA = [
-    G_Z_DATA,
-    S_Z_DATA
+    S_Z_DATA,
+    G_Z_DATA
 ]
 
 const CaseShow = () => {
@@ -109,6 +109,7 @@ const CaseShow = () => {
                     margin:0;
                     border: 10px solid transparent;
                     overflow:hidden;
+                    flex:1;
                 }
                 .bottom{
                     display: flex;
@@ -128,8 +129,8 @@ const CaseShow = () => {
             // subTitle={"Decoration package"}
             />
             <div className="switch">
-                <div className={`btn ${key === 0 ? 'ac' : ''}`} onClick={()=>setKey(0)}>工装类</div>
-                <div className={`btn ${key === 1 ? 'ac' : ''}`} onClick={()=>setKey(1)}>私装类</div>
+                <div className={`btn ${key === 0 ? 'ac' : ''}`} onClick={()=>setKey(0)}>私装类</div>
+                <div className={`btn ${key === 1 ? 'ac' : ''}`} onClick={()=>setKey(1)}>工装类</div>
             </div>
             <div className="wrap">
                 <div className="left">

@@ -9,10 +9,10 @@ const L_DATA = {
 }
 const R_DATA = [
     {
-        img: '../../static/img/cgr.jpg',
-        name: '陈国荣',
-        job: '私宅设计组组长',
-        motto: '艺术是生活的升华，设计是艺术的呈现。'
+        img: '../../static/img/zxg.jpg',
+        name: '周勋岗',
+        job: '设计总监',
+        motto: '设计当以自然为师，以万物为友，以苍生为念。上善若水，静水流深。'
     },
     {
         img: '../../static/img/mw.jpg',
@@ -22,29 +22,30 @@ const R_DATA = [
 
     },
     {
-        img: '../../static/img/wh.png',
-        name: '文豪',
-        job: '工装设计组组长',
-        motto: '对建筑本原——空间、光线、界面的研究以及意境塑造是室内陈设的主要方向。'
-    },
-    {
         img: '../../static/img/zw.jpg',
         name: '曾维',
         job: '设计运营总监',
         motto: '设计是对生活品质的一种倡导、一种提升、一种对社会审美情趣的影响.'
     },
-    {
-        img: '../../static/img/zxg.jpg',
-        name: '周勋岗',
-        job: '设计总监',
-        motto: '设计当以自然为师，以万物为友，以苍生为念。上善若水，静水流深。'
-    },
+    
     {
         img: '../../static/img/rsx.jpg',
         name: '任思雄',
         job: '设计研发总监',
         motto: '优质的室内软装在于精神层面上的表现力和感染力。'
     },
+    {
+        img: '../../static/img/wh.png',
+        name: '文豪',
+        job: '工装设计组组长',
+        motto: '对建筑本原——空间、光线、界面的研究以及意境塑造是室内陈设的主要方向。'
+    },
+    {
+        img: '../../static/img/cgr.jpg',
+        name: '陈国荣',
+        job: '私宅设计组组长',
+        motto: '艺术是生活的升华，设计是艺术的呈现。'
+    }
 ]
 const Team = () => {
     const { img, name, job, years, goodAt } = L_DATA;

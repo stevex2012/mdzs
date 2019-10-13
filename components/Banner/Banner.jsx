@@ -7,10 +7,9 @@ function Banner(props) {
             <style jsx>{`
                 .banner{
                     height: 508px;
-                    background: url(${bgImg}) center top no-repeat;
                 }
             `}</style>
-            {children}
+            <img src={bgImg} alt=""/>
         </div>
     )
 }
