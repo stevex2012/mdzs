@@ -85,7 +85,7 @@ class Case extends React.Component {
                         flex-wrap:wrap;
                     }
                 `}</style>
-                <Banner bgImg={'../static/img/case_banner.jpg'} />
+                <Banner bgImg={'../static/img/index_banner1.jpg'} />
                 <div className="wrap">
                     {list.map((item) => this.renderItem(item, type))}
                 </div>

@@ -6,7 +6,7 @@ function Banner(props) {
         <div className="banner">
             <style jsx>{`
                 .banner{
-                    height: 700px;
+                    height: 552px;
                     display: flex;
                     align-items: center;
                     overflow: hidden;

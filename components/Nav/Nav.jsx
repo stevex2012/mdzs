@@ -69,18 +69,18 @@ class Nav extends React.Component {
         const w = e.offsetWidth;
         const l = e.offsetLeft;
         this.setState({
-            width: 82,
-            left: 0,
-            orginW: 82,
-            orginL: 0,
-        })
-    }
-    handleBaseClick=()=>{
-        this.setState({
             width: w,
             left: l,
             orginW: w,
             orginL: l,
+        })
+    }
+    handleBaseClick=()=>{
+        this.setState({
+            width: 82,
+            left: 0,
+            orginW: 82,
+            orginL: 0,
         })
     }
     render() {
@@ -166,7 +166,7 @@ class Nav extends React.Component {
                             <a className="nan_item" onMouseEnter={this.handleEnter} ref={this.refal}>案例</a>
                         </Dropdown>
                         <Link href="/">
-                            <a className="logo nan_item" onMouseEnter={this.handleEnter}>
+                            <a className="logo nan_item" onMouseEnter={this.handleEnter} onClick={this.handleBaseClick}>
                                 <img src="../../static/img/logo.jpg" alt='' width="224"/>
                             </a>
                         </Link>

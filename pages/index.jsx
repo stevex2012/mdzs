@@ -170,7 +170,7 @@ class Index extends React.Component {
                     color: #fff;
                 }
                 `}</style>
-                <Banner bgImg={'../static/img/index_banner.jpg'} />
+                <Banner bgImg={'../static/img/index_banner1.jpg'} />
                 <ul className="auto pic">
                     <li>
                         <i className="left tb"></i>
