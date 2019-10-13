@@ -10,12 +10,21 @@ class Case extends React.Component {
         return { type };
     }
     handleLoad = (e) => {
+        const baseH = 310;
+        const baseW = 367;
+        const rate = baseW/baseH;
         const el = e.target;
         const w = el.width;
         const h = el.height;
-        console.log(w, h);
+        const elRate = w/h;
+        if(elRate<rate){
+            e.target.style.cssText = 'width:100%;height:auto'
+        }else{
+            e.target.style.cssText = 'height:100%;width:auto'
+        }
+
     }
-    renderItem(item,type) {
+    renderItem(item, type) {
         const { img, name, id } = item;
         return (
             <div className="item_wrap" key={id}>
@@ -63,7 +72,7 @@ class Case extends React.Component {
         )
     }
     render() {
-        const { type  } = this.props;
+        const { type } = this.props;
         const list = caseConfig[type]
         return (
             <React.Fragment>
@@ -78,7 +87,7 @@ class Case extends React.Component {
                 `}</style>
                 <Banner bgImg={'../static/img/case_banner.jpg'} />
                 <div className="wrap">
-                    {list.map((item) => this.renderItem(item,type))}
+                    {list.map((item) => this.renderItem(item, type))}
                 </div>
             </React.Fragment>
         )

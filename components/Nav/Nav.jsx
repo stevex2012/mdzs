@@ -69,6 +69,14 @@ class Nav extends React.Component {
         const w = e.offsetWidth;
         const l = e.offsetLeft;
         this.setState({
+            width: 82,
+            left: 0,
+            orginW: 82,
+            orginL: 0,
+        })
+    }
+    handleBaseClick=()=>{
+        this.setState({
             width: w,
             left: l,
             orginW: w,
@@ -141,7 +149,7 @@ class Nav extends React.Component {
                             <a className="nan_item" ref={this.ref} onMouseEnter={this.handleEnter} onClick={this.handleClick}>首页</a>
                         </Link>
                         <Link href="/#md_about">
-                            <a className="nan_item" onMouseEnter={this.handleEnter} >关于</a>
+                            <a className="nan_item" onMouseEnter={this.handleEnter} onClick={this.handleBaseClick}>关于</a>
                         </Link>
                         <Dropdown overlay={<Menu>
                             <Menu.Item key="gz">
@@ -180,10 +188,10 @@ class Nav extends React.Component {
                             <a className="nan_item" onMouseEnter={this.handleEnter} ref={this.refcp}>产品</a>
                         </Dropdown>
                         <Link href="/#md_team">
-                            <a className="nan_item" onMouseEnter={this.handleEnter} >团队</a>
+                            <a className="nan_item" onMouseEnter={this.handleEnter} onClick={this.handleBaseClick}>团队</a>
                         </Link>
                         <Link href="/#md_connect">
-                            <a className="nan_item" onMouseEnter={this.handleEnter} >联系</a>
+                            <a className="nan_item" onMouseEnter={this.handleEnter} onClick={this.handleBaseClick}>联系</a>
                         </Link>
                     </div>
                 </div>

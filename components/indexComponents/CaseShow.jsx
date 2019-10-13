@@ -45,7 +45,7 @@ const S_Z_DATA = {
             img: '../../static/img/caseshow/si/4.jpg',
         },
         {
-            img: '../../static/img/caseshow/si/5.png',
+            img: '../../static/img/caseshow/si/5.jpg',
         },
         {
             img: '../../static/img/caseshow/si/6.jpg',
