@@ -2,9 +2,9 @@ import React from 'react';
 import { Banner, H1 } from '../components';
 import CaseShow from '../components/indexComponents/CaseShow';
 import About from '../components/indexComponents/About';
-import Team from '../components/indexComponents/Team'; 
-import Connect from '../components/indexComponents/Connect'; 
-
+import Team from '../components/indexComponents/Team';
+import Connect from '../components/indexComponents/Connect';
+import { Carousel } from 'antd';
 class Index extends React.Component {
     constructor(props) {
         super(props);
@@ -169,8 +169,26 @@ class Index extends React.Component {
                     background: #3a3a3a;
                     color: #fff;
                 }
+                .item_s img{
+                    width:100%;
+                }
                 `}</style>
-                <Banner bgImg={'../static/img/index_banner1.jpg'} />
+                {/* <Banner bgImg={'../static/img/index_banner1.jpg'} /> */}
+                <Carousel
+                    arrows
+                    dots
+                    draggable
+                    autoplay>
+                    <div className="item_s">
+                        <img src="../static/img/ban1.jpg" />
+                    </div>
+                    <div className="item_s">
+                        <img src="../static/img/ban2.jpg" />
+                    </div>
+                    <div className="item_s">
+                        <img src="../static/img/ban3.jpg" />
+                    </div>
+                </Carousel>
                 <ul className="auto pic">
                     <li>
                         <i className="left tb"></i>

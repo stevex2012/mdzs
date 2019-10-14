@@ -108,7 +108,7 @@ class Nav extends React.Component {
                     position:relative;
                 }
                 .nav  a{
-                    font-size:16px;
+                    font-size:18px;
                 }
                 .logo{
                     width: 224px;

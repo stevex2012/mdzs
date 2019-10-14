@@ -15,18 +15,19 @@ const R_DATA = [
         motto: '设计当以自然为师，以万物为友，以苍生为念。上善若水，静水流深。'
     },
     {
+        img: '../../static/img/zw.jpg',
+        name: '曾维',
+        job: '设计运营总监',
+        motto: '设计是对生活品质的一种倡导、一种提升、一种对社会审美情趣的影响.'
+    },
+    {
         img: '../../static/img/mw.jpg',
         name: '毛伟',
         job: '首席创意总监',
         motto: '创意源于对生活的细细品味！'
 
     },
-    {
-        img: '../../static/img/zw.jpg',
-        name: '曾维',
-        job: '设计运营总监',
-        motto: '设计是对生活品质的一种倡导、一种提升、一种对社会审美情趣的影响.'
-    },
+    
     
     {
         img: '../../static/img/rsx.jpg',

@@ -6,30 +6,30 @@ import Link from 'next/link';
 const G_Z_DATA = {
     bg: {
         img: '../../static/img/caseshow/gong/1.png',
-        href: '/caseDetail?id=14&type=1'
+        href: '/caseDetail?id=1&type=0'
     },
     bottom: [
         {
             img: '../../static/img/caseshow/gong/2.jpg',
-            href: '/caseDetail?id=14&type=1'
+            href:'/caseDetail?id=0&type=0'
         },
         {
             img: '../../static/img/caseshow/gong/3.jpg',
-            href: '/caseDetail?id=14&type=1'
+            href: '/caseDetail?id=0&type=0'
         }
     ],
     right: [
         {
             img: '../../static/img/caseshow/gong/4.png',
-            href: '/caseDetail?id=14&type=1'
+            href: '/caseDetail?id=1&type=0'
         },
         {
             img: '../../static/img/caseshow/gong/5.png',
-            href: '/caseDetail?id=14&type=1'
+            href: '/caseDetail?id=1&type=0'
         },
         {
             img: '../../static/img/caseshow/gong/6.jpg',
-            href: '/caseDetail?id=14&type=1'
+            href: '/caseDetail?id=0&type=0'
         }
     ]
 }
@@ -37,12 +37,12 @@ const G_Z_DATA = {
 const S_Z_DATA = {
     bg: {
         img: '../../static/img/caseshow/si/1.jpg',
-        href: '/caseDetail?id=0&type=1'
+        href: '/caseDetail?id=14&type=1'
     },
     bottom: [
         {
             img: '../../static/img/caseshow/si/2.jpg',
-            href: '/caseDetail?id=14&type=1'
+            href: '/caseDetail?id=0&type=1'
         },
         {
             img: '../../static/img/caseshow/si/3.jpg',
@@ -52,15 +52,15 @@ const S_Z_DATA = {
     right: [
         {
             img: '../../static/img/caseshow/si/4.jpg',
-            href: '/caseDetail?id=14&type=1'
+            href: '/caseDetail?id=16&type=1'
         },
         {
             img: '../../static/img/caseshow/si/5.jpg',
-            href: '/caseDetail?id=14&type=1'
+            href: '/caseDetail?id=5&type=1'
         },
         {
             img: '../../static/img/caseshow/si/6.jpg',
-            href: '/caseDetail?id=14&type=1'
+            href: '/caseDetail?id=10&type=1'
         }
     ]
 }
