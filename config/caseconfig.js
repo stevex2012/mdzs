@@ -4,6 +4,8 @@ const caseConfig = {
         {
             img: '../static/img/case/sd_2 (2).jpg',
             name: '圣景地产办公室',
+            square:'1200平米',
+            style:'现代',
             time:'2017-04-23 15:49:39',
             imgList:[
                 '../static/img/case/sd_1.jpg',
@@ -31,6 +33,8 @@ const caseConfig = {
         {
             img: '../static/img/case/cjyy (1).jpg',
             name: '春江怡园',
+            square:'130平米',
+            style:'现代轻奢',
             time:'2017-04-23 15:49:39',
             imgList:[
                 '../static/img/case/cjyy (1).jpg',
@@ -47,6 +51,8 @@ const caseConfig = {
         {
             img: '../static/img/case/dotx (7).jpg',
             name: '东湖天下',
+            square:'110平米',
+            style:'现代轻奢',
             time:'2017-04-23 15:49:39',
             imgList:[
                 '../static/img/case/dotx (1).jpg',
@@ -62,6 +68,8 @@ const caseConfig = {
         {
             img: '../static/img/case/gyyh (1).jpg',
             name: '公园一号',
+            square:'130平米',
+            style:'现代轻奢',
             time:'2017-04-23 15:49:39',
             imgList:[
                 '../static/img/case/gyyh (1).jpg',
@@ -73,6 +81,8 @@ const caseConfig = {
         {
             img: '../static/img/case/gchy (1).jpg',
             name: '桂城花园',
+            square:'210平米',
+            style:'现代',
             time:'2017-04-23 15:49:39',
             imgList:[
                 '../static/img/case/gchy (1).jpg',
@@ -83,6 +93,8 @@ const caseConfig = {
         {
             img: '../static/img/case/hyc (1).jpg',
             name: '花漾城',
+            square:'280平米',
+            style:'简约欧式',
             time:'2017-04-23 15:49:39',
             imgList:[
                 '../static/img/case/hyc (1).jpg',
@@ -95,6 +107,8 @@ const caseConfig = {
         {
             img: '../static/img/case/hjxj (1).jpg',
             name: '华锦新城',
+            square:'160平米',
+            style:'现代',
             time:'2017-04-23 15:49:39',
             imgList:[
                 '../static/img/case/hjxj (1).jpg',
@@ -111,6 +125,8 @@ const caseConfig = {
         {
             img: '../static/img/case/hr24 (1).jpg',
             name: '华润24',
+            square:'145平米',
+            style:'现代混搭',
             time:'2017-04-23 15:49:39',
             imgList:[
                 '../static/img/case/hr24 (1).jpg',
@@ -121,6 +137,8 @@ const caseConfig = {
         {
             img: '../static/img/case/jzc (1).jpg',
             name: '江城著',
+            square:'520平米',
+            style:'新中式',
             time:'2017-04-23 15:49:39',
             imgList:[
                 '../static/img/case/jzc (1).jpg',
@@ -135,6 +153,8 @@ const caseConfig = {
         },{
             img: '../static/img/case/jsw (1).png',
             name: '金沙湾',
+            square:'115平米',
+            style:'现代',
             time:'2017-04-23 15:49:39',
             imgList:[
                 '../static/img/case/jsw (1).png',
@@ -151,6 +171,8 @@ const caseConfig = {
         {
             img: '../static/img/case/jxbd (1).jpg',
             name: '锦绣半岛',
+            square:'170平米',
+            style:'现代',
             time:'2017-04-23 15:49:39',
             imgList:[
                 '../static/img/case/jxbd (1).jpg',
@@ -170,6 +192,8 @@ const caseConfig = {
         {
             img: '../static/img/case/gxgj (1).jpg',
             name: '凯旋国际',
+            square:'92平米',
+            style:'现代',
             time:'2017-04-23 15:49:39',
             imgList:[
                 '../static/img/case/gxgj (1).jpg',
@@ -184,6 +208,8 @@ const caseConfig = {
         {
             img: '../static/img/case/syc (1).jpg',
             name: '山语城',
+            square:'510平米',
+            style:'简美',
             time:'2017-04-23 15:49:39',
             imgList:[
                 '../static/img/case/syc (1).jpg',
@@ -199,6 +225,8 @@ const caseConfig = {
         {
             img: '../static/img/case/syczh (1).jpg',
             name: '山语城中户',
+            square:'550平米',
+            style:'美式',
             time:'2017-04-23 15:49:39',
             imgList:[
                 '../static/img/case/syczh (1).jpg',
@@ -213,6 +241,8 @@ const caseConfig = {
         {
             img: '../static/img/case/xjmd (1).jpg',
             name: '香江美地',
+            square:'65平米',
+            style:'现代',
             time:'2017-04-23 15:49:39',
             imgList:[
                 '../static/img/case/xjmd (1).jpg',
@@ -225,6 +255,8 @@ const caseConfig = {
         {
             img: '../static/img/case/yjl (1).jpg',
             name: '雅居乐',
+            square:'320平米',
+            style:'欧式',
             time:'2017-04-23 15:49:39',
             imgList:[
                 '../static/img/case/yjl (1).jpg',
@@ -235,6 +267,8 @@ const caseConfig = {
         {
             img: '../static/img/case/yf (1).jpg',
             name: '御峰',
+            square:'280平米',
+            style:'简约欧式',
             time:'2017-04-23 15:49:39',
             imgList:[
                 '../static/img/case/yf (1).jpg',
@@ -249,6 +283,8 @@ const caseConfig = {
         {
             img: '../static/img/case/ypsy (1).jpg',
             name: '御品尚源',
+            square:'230平米',
+            style:'现代',
             time:'2017-04-23 15:49:39',
             imgList:[
                 '../static/img/case/ypsy (1).jpg',
