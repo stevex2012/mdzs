@@ -78,7 +78,7 @@ const FloatMenu = function () {
                     <img src="../../static/img/erweima.png" alt="" />
                     <span className="txt">微信公众号</span>
                     <div className="sub_child qrcod">
-                        <img src='http://www.yanshesheji.com/uploads/logo_15085532103656.jpg' width='145'/>
+                        <img src='../../static/img/qrcode.jpg' width='145'/>
                         <div className="t_1">扫一扫</div>
                         <div className="t_2">获取装修设计资讯</div>
                     </div>

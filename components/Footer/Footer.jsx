@@ -22,9 +22,11 @@ function Footer() {
                     align-items: center;
                 }
                 .left .qrcode{
-                    background: url(../static/img/img.jpg) -283px -165px no-repeat;
                     width: 165px;
                     height: 165px;
+                }
+                .left .qrcode img{
+                    width:100%;
                 }
                 .left .desc{
                     padding-top:20px;
@@ -44,7 +46,9 @@ function Footer() {
                 }
             `}</style>
             <div className="left item">
-                <span className="qrcode" />
+                <span className="qrcode" >
+                <img src='../../static/img/qrcode.jpg' />
+                </span>
                 <div className="desc">关注获取更多设计资讯</div>
             </div>
             <div className="right item">
