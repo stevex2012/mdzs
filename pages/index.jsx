@@ -175,7 +175,7 @@ class Index extends React.Component {
                 `}</style>
                 {/* <Banner bgImg={'../static/img/index_banner1.jpg'} /> */}
                 <Carousel
-                    arrows
+                    arrows={true}
                     dots
                     draggable
                     autoplay>

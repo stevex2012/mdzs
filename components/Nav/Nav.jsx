@@ -108,10 +108,9 @@ class Nav extends React.Component {
                     position:relative;
                 }
                 .nav  a{
-                    font-size:18px;
+                    font-size:20px;
                 }
                 .logo{
-                    width: 224px;
                     display: flex !important;
                     align-items: center;
                     justify-content: center;
@@ -119,7 +118,7 @@ class Nav extends React.Component {
                     margin:0 20px;
                 }
                 .logo img{
-                    width:100%;
+                    width: 320px;
                 }
                 .nan_item{
                     padding:25px;
