@@ -5,6 +5,7 @@ import About from '../components/indexComponents/About';
 import Team from '../components/indexComponents/Team';
 import Connect from '../components/indexComponents/Connect';
 import { Carousel } from 'antd';
+import LazyLoad from 'react-lazyload';
 class Index extends React.Component {
     constructor(props) {
         super(props);
@@ -219,30 +220,6 @@ class Index extends React.Component {
                         </div>
                     </li>
                 </ul>
-                {/* <div className="main_con">
-                    <H1
-                        title={<span>环保整装<font style={{ color: '#ff3333' }}>套餐</font></span>}
-                        subTitle={"Decoration package"} />
-                </div> */}
-                {/* 暂时不要 */}
-                {/* <div className="floor_1 main_con">
-                    <div className="left">
-                        <div className="inner_box">
-                            <h1>{packageData.title}</h1>
-                            <p>包设计<span> · </span>包材料<span> · </span>包施工<span> · </span>包监理<span> · </span>包售后<span> · </span>包保洁</p>
-                            <h3>半价{packageData.price}元/㎡</h3>
-                            <div className="yuanjia">原{packageData.o_price}元/㎡</div>
-                            <div className="package_tab">
-                                <span className={`tab_item ${packageIdx === 0 ? 'ac' : ''}`}>精致装</span>
-                                <span className={`tab_item ${packageIdx === 1 ? 'ac' : ''}`}>雅致装</span>
-                                <span className={`tab_item ${packageIdx === 2 ? 'ac' : ''}`}>极致装</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="right">
-                        <img src={packageData.img} alt='' />
-                    </div>
-                </div> */}
                 <CaseShow />
                 {/* 关于 */}
                 <div className="" id="md_about">

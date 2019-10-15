@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 // import { Button } from 'antd';
 import H1 from '../H1/H1';
 import Link from 'next/link';
+import LazyLoad from 'react-lazyload';
 //工装数据
 const G_Z_DATA = {
     bg: {
@@ -11,7 +12,7 @@ const G_Z_DATA = {
     bottom: [
         {
             img: '../../static/img/caseshow/gong/2.jpg',
-            href:'/caseDetail?id=0&type=0'
+            href: '/caseDetail?id=0&type=0'
         },
         {
             img: '../../static/img/caseshow/gong/3.jpg',
@@ -146,36 +147,44 @@ const CaseShow = () => {
             </div>
             <div className="wrap">
                 <div className="left">
-                    <div className="top item">
-                        <Link href={bg.href}>
-                            <a>
-                                <img src={bg.img} />
-                            </a>
-                        </Link>
-                    </div>
+                    <LazyLoad height={450}>
+                        <div className="top item">
+                            <Link href={bg.href}>
+                                <a>
+
+                                    <img src={bg.img} />
+
+                                </a>
+                            </Link>
+                        </div>
+                    </LazyLoad>
                     <div className="bottom">
                         {bottom.map((item, idx) => {
                             const { img, href } = item;
-                            return <div className="item" key={idx}>
-                                <Link href={href}>
-                                    <a>
-                                        <img src={img} />
-                                    </a>
-                                </Link>
-                            </div>
+                            return <LazyLoad height={225} key={idx}>
+                                <div className="item" key={idx}>
+                                    <Link href={href}>
+                                        <a>
+                                            <img src={img} />
+                                        </a>
+                                    </Link>
+                                </div>
+                            </LazyLoad>
                         })}
                     </div>
                 </div>
                 <div className="right">
                     {right.map((item, idx) => {
                         const { img, href } = item;
-                        return <div className="item" key={idx}>
-                            <Link href={href}>
-                                <a>
-                                    <img src={img} />
-                                </a>
-                            </Link>
-                        </div>
+                        return <LazyLoad height={225} key={idx}>
+                            <div className="item" key={idx}>
+                                <Link href={href}>
+                                    <a>
+                                        <img src={img} />
+                                    </a>
+                                </Link>
+                            </div>
+                        </LazyLoad>
                     })}
                 </div>
             </div>

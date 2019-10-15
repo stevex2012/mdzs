@@ -2,7 +2,7 @@ import React from 'react';
 import { Tabs } from 'antd';
 const { TabPane } = Tabs;
 import productsConfig from '../config/productsConfig';
-
+import LazyLoad from 'react-lazyload';
 class Case extends React.Component {
     static async getInitialProps({ query }) {
         //获取 query type战绩，0--工装类 1--私宅类
@@ -43,7 +43,7 @@ class Case extends React.Component {
                             return <TabPane tab={txt} key={id}>
                                 <div className="item">
                                     {imgList.map(item=>{
-                                        return <img src={item} alt='' key={item}/>
+                                        return <LazyLoad height={800}><img src={item} alt='' key={item}/></LazyLoad>
                                     })}
                                 </div>
                         </TabPane>

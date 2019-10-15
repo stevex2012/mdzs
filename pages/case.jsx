@@ -2,6 +2,7 @@ import React from 'react';
 import { Banner, H1 } from '../components';
 import Link from 'next/link';
 import caseConfig from '../config/caseconfig.js';
+import LazyLoad from 'react-lazyload';
 // 0  工装  1，私装
 class Case extends React.Component {
     static async getInitialProps({ query }) {
@@ -63,7 +64,9 @@ class Case extends React.Component {
                 <Link href={`/caseDetail?id=${id}&type=${type}`}>
                     <a className="item">
                         <div className="img_wrap">
-                            <img src={img} onLoad={e => this.handleLoad(e)} />
+                            <LazyLoad height={310}>
+                                <img src={img} onLoad={e => this.handleLoad(e)} />
+                            </LazyLoad>
                         </div>
                         <div className="title">{name}</div>
                     </a>

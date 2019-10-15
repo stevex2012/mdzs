@@ -1,5 +1,6 @@
 import React from 'react';
 import H1 from '../H1/H1';
+import LazyLoad from 'react-lazyload';
 const L_DATA = {
     img: 'http://www.cqdmjz.com/statics/images/images/sjs00.jpg',
     name: '周勋岗',
@@ -27,8 +28,8 @@ const R_DATA = [
         motto: '创意源于对生活的细细品味！'
 
     },
-    
-    
+
+
     {
         img: '../../static/img/rsx.jpg',
         name: '任思雄',
@@ -130,10 +131,12 @@ const Team = () => {
                     overflow:hidden;
                 }
             `}</style>
-            <H1
-                title={<span>团队</span>}
-            // subTitle={"Decoration package"}
-            />
+            <LazyLoad height={130} >
+                <H1
+                    title={<span>团队</span>}
+                // subTitle={"Decoration package"}
+                />
+            </LazyLoad>
             <div className="box">
                 {/* <div className="left">
                     <img src={img}/>
@@ -148,7 +151,9 @@ const Team = () => {
                     {R_DATA.map(item => {
                         const { img, name, job, motto } = item;
                         return <div className="item" key={motto}>
-                            <div className="img_box"><img src={img} /></div>
+                            <LazyLoad height={350} >
+                                <div className="img_box"><img src={img} /></div>
+                            </LazyLoad>
                             <div className="txt_box">
                                 <div>{job}</div>
                                 <div>{name}</div>

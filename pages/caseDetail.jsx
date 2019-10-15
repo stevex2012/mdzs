@@ -1,5 +1,6 @@
 import React from 'react';
 import caseConfig from '../config/caseconfig.js';
+import LazyLoad from 'react-lazyload';
 class caseDetail extends React.Component{
     static async getInitialProps({ query }) {
         //获取 query type战绩，0--工装类 1--私宅类
@@ -49,7 +50,7 @@ class caseDetail extends React.Component{
                     <div className="time">{time}</div>
                     <div className="img_wrap">
                         {imgList.map(item=>{
-                            return <img src={item} key={item}/>
+                            return <LazyLoad heigt={500} key={item}><img src={item} key={item}/></LazyLoad>
                         })}
                     </div>
                 </div>
