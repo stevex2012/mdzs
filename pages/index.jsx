@@ -170,14 +170,16 @@ class Index extends React.Component {
                     background: #3a3a3a;
                     color: #fff;
                 }
+                .item_s{
+                }
                 .item_s img{
                     width:100%;
                 }
                 `}</style>
                 {/* <Banner bgImg={'../static/img/index_banner1.jpg'} /> */}
-                <div style={{overflowX:'hidden'}}>
+                <div style={{overflow:'hidden'}}>
                     <Carousel
-                        arrows={true}
+                        // arrows={true}
                         dots
                         draggable
                         autoplay>
