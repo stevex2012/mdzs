@@ -52,20 +52,20 @@ const R_DATA = [
 const Team = () => {
     const { img, name, job, years, goodAt } = L_DATA;
     return (
-        <div className="team">
+        <div className="team_index">
             <style jsx>{`
-                .team{
+                .team_index{
                     width:1200px;
                     margin:0 auto;
                 }
-                .team img{
+                .team_index img{
                     width:100%;
                 }
-                .box{
+                .team_index .box{
                     display:flex;
                     
                 }
-                .left{
+                .team_index .left{
                     width:300px;
                     padding:10px;
                     background: #ff3333;
@@ -74,28 +74,28 @@ const Team = () => {
                     flex-shrink: 0;
                     border-bottom: 10px solid #fff;
                 }
-                .right{
+                .team_index .right{
                     flex:1;
                     display: flex;
                     flex-wrap: wrap;
                 }
-                .desc{
+                .team_index .desc{
                     display:flex;
                     font-size:30px;
                     align-items: center;
                     padding: 20px 0;
                     border-bottom: 1px #de8f8b solid;
                 }
-                .job{
+                .team_index .job{
                     font-size:16px;
                     margin-left:20px;
                 }
-                .year{
+                .team_index .year{
                     line-height:20px;
                     font-size:12px;
                     padding:10px 0;
                 }
-                .item{
+                .team_index .item{
                     width:33.3333%;
                     // height: 270px;
                     border:10px solid transparent;
@@ -106,7 +106,7 @@ const Team = () => {
                     display: flex;
                     flex-direction: column;
                 }
-                .dddd{
+                .team_index .dddd{
                     position:absolute;
                     left:0;
                     bottom:0;
@@ -117,16 +117,16 @@ const Team = () => {
                     padding:0 10px;
                     font-size:12px;
                 }
-                .txt_box{
+                .team_index .txt_box{
                     font-size:16px;
                     line-height:30px;
                     color:#333;
                 }
-                .motto{
+                .team_index .motto{
                     font-size:12px;
                     line-height:20px;
                 }
-                .img_box{
+                .team_index .img_box{
                     height:350px;
                     overflow:hidden;
                 }

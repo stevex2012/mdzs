@@ -10,17 +10,17 @@ const SWIPER_DATA = [
 ]
 const About = () => {
     return (
-        <div className="about">
-            <style jsx>{`
-                .about{
+        <div className="about_index">
+            <style>{`
+                .about_index{
                     width:1200px;
                     margin:0 auto;
                 }
-                .item{
+                .about_index .item{
                     height:350px;
                     background:#ccc;
                 }
-                .desc{
+                .about_index .desc{
                     line-height: 28px;
                     font-size: 16px;
                     text-indent: 2em;

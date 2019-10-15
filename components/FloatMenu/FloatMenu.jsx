@@ -7,7 +7,7 @@ function handleGotop(){
 const FloatMenu = function () {
     return (
         <div className="md_fr_menu">
-            <style jsx>{`
+            <style>{`
                 .md_fr_menu{
                     position:fixed;
                     right:0;
@@ -36,12 +36,12 @@ const FloatMenu = function () {
                 .md_fr_menu .item:hover .sub_child{
                     display:block;
                 }
-                .item .txt{
+                .md_fr_menu .item .txt{
                     color: #fff;
                     display: block;
                     font-size: 15px;
                 }
-                .sub_child{
+                .md_fr_menu .sub_child{
                     display:none;
                     position:absolute;
                     height: 100%;
@@ -54,16 +54,16 @@ const FloatMenu = function () {
                     color: #fff;
                     box-sizing:border-box;
                 }
-                .qrcod{
+                .md_fr_menu .qrcod{
                     height: auto;
                     padding: 5px;
                     bottom:40px;
                 }
-                .t_1{
+                .md_fr_menu .t_1{
                     line-height:20px;
                     font-size:14px;
                 }
-                .t_2{
+                .md_fr_menu .t_2{
                     line-height:20px;
                     font-size:16px;
                 }

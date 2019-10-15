@@ -2,9 +2,9 @@ import React from 'react';
 
 function Footer() {
     return (
-        <div className="footer">
-            <style jsx>{`
-                .footer{
+        <div className="footer_wrap">
+            <style>{`
+                .footer_wrap{
                     background-color: #E7E7E7;
                     height: auto;
                     position: relative;
@@ -12,35 +12,35 @@ function Footer() {
                     display:flex;
                     align-items:center;
                 }
-                .item{
+                .footer_wrap .item{
                     flex:1;
                 }
-                .left{
+                .footer_wrap .left{
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
                 }
-                .left .qrcode{
+                .footer_wrap .left .qrcode{
                     width: 165px;
                     height: 165px;
                 }
-                .left .qrcode img{
+                .footer_wrap .left .qrcode img{
                     width:100%;
                 }
-                .left .desc{
+                .footer_wrap .left .desc{
                     padding-top:20px;
                 }
-                .title{
+                .footer_wrap .title{
                     color: #333;
                     font-size: 24px;
                     margin-bottom:15px;
                 }
-                .addr{
+                .footer_wrap .addr{
                     font-size: 14px;
                     color:#333;
                 }
-                .tel{
+                .footer_wrap .tel{
                     font-size: 14px;
                     color:#333;
                 }
@@ -57,7 +57,7 @@ function Footer() {
                 <div className="addr">邮箱：99959703@qq.com</div>
                 <div className="addr">手机：13436092281</div>
                 <div className="tel">电话：023-63018362</div>
-                <div className="tel">www.diboxi.com All RightsReserved. 重庆蒂珀希工程设计咨询有限公司 渝ICP备19013693号</div>
+                <div className="tel">All RightsReserved. by 重庆蒂珀希工程设计咨询有限公司 渝ICP备19013693号</div>
             </div>
         </div>
     )

@@ -77,17 +77,17 @@ const CaseShow = () => {
     const { bg, bottom, right } = imgData;
     return (
         <div className="caseshow_box">
-            <style jsx>{`
+            <style>{`
                 .caseshow_box{
                     width:1200px;
                     margin:0 auto;
                 }
-                .switch{
+                .caseshow_box .switch{
                     display: flex;
                     align-items: center;
                     justify-content: center;
                 }
-                .switch .btn{
+                .caseshow_box .switch .btn{
                     border: none;
                     padding: 5px 20px;
                     font-size: 16px;
@@ -95,27 +95,27 @@ const CaseShow = () => {
                     cursor:pointer;
                     background: #efefef;
                 }
-                .switch .btn.ac{
+                .caseshow_box .switch .btn.ac{
                     background-color: #1890ff;
                     color:#fff;
                 }
-                .wrap{
+                .caseshow_box .wrap{
                     display:flex;
                     justify-content: center;
                 }
-                .wrap img{
+                .caseshow_box .wrap img{
                     width:100%;
                 }
-                .left{
+                .caseshow_box .left{
                     width:800px;
                 }
-                .right{
+                .caseshow_box .right{
                     width:400px;
                 }
-                .top{
+                .caseshow_box .top{
                     height:450px;
                 }
-                .item{
+                .caseshow_box .item{
                     display:flex;
                     align-items: center;
                     justify-content: center;
@@ -124,16 +124,16 @@ const CaseShow = () => {
                     overflow:hidden;
                     flex:1;
                 }
-                .bottom{
+                .caseshow_box .bottom{
                     display: flex;
                     height: 225px;
                 }
-                .right{
+                .caseshow_box .right{
                     display: flex;
                     height: 675px;
                     flex-direction: column;
                 }
-                .right .item{
+                .caseshow_box .right .item{
                     flex:1;
                 }
             `}</style>

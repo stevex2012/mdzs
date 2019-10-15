@@ -175,21 +175,23 @@ class Index extends React.Component {
                 }
                 `}</style>
                 {/* <Banner bgImg={'../static/img/index_banner1.jpg'} /> */}
-                <Carousel
-                    arrows={true}
-                    dots
-                    draggable
-                    autoplay>
-                    <div className="item_s">
-                        <img src="../static/img/ban1.jpg" />
-                    </div>
-                    <div className="item_s">
-                        <img src="../static/img/ban2.jpg" />
-                    </div>
-                    <div className="item_s">
-                        <img src="../static/img/ban3.jpg" />
-                    </div>
-                </Carousel>
+                <div style={{overflowX:'hidden'}}>
+                    <Carousel
+                        arrows={true}
+                        dots
+                        draggable
+                        autoplay>
+                        <div className="item_s">
+                            <img src="../static/img/ban1.jpg" />
+                        </div>
+                        <div className="item_s">
+                            <img src="../static/img/ban2.jpg" />
+                        </div>
+                        <div className="item_s">
+                            <img src="../static/img/ban3.jpg" />
+                        </div>
+                    </Carousel>
+                </div>
                 <ul className="auto pic">
                     <li>
                         <i className="left tb"></i>
