@@ -27,7 +27,7 @@ class Index extends React.Component {
         const packageData = this.state.package[packageIdx];
         return (
             <React.Fragment>
-                <style jsx>{`
+                <style>{`
                 .pic {
                     height:151px;
                     display:flex;

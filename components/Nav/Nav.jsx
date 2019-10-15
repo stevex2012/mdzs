@@ -90,7 +90,7 @@ class Nav extends React.Component {
         const w = width || orginW;
         return (
             <div className="auto top1">
-                <style jsx>{`
+                <style>{`
                 .top1 {
                 }
                 .auto {
