@@ -3,6 +3,7 @@ import { Tabs } from 'antd';
 const { TabPane } = Tabs;
 import productsConfig from '../config/productsConfig';
 import LazyLoad from 'react-lazyload';
+import Head from 'next/head'
 class Case extends React.Component {
     static async getInitialProps({ query }) {
         //获取 query type战绩，0--工装类 1--私宅类
@@ -14,6 +15,9 @@ class Case extends React.Component {
         const {id} = this.props;
         return (
             <div className="wrap">
+                <Head>
+                    <title>产品 | 蒂珀希设计</title>
+                </Head>
                 <style jsx>{`
                     .wrap{
                         background:#fff;

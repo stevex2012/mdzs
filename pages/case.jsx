@@ -3,6 +3,7 @@ import { Banner, H1 } from '../components';
 import Link from 'next/link';
 import caseConfig from '../config/caseconfig.js';
 import LazyLoad from 'react-lazyload';
+import Head from 'next/head'
 // 0  工装  1，私装
 class Case extends React.Component {
     static async getInitialProps({ query }) {
@@ -79,6 +80,9 @@ class Case extends React.Component {
         const list = caseConfig[type]
         return (
             <React.Fragment>
+                <Head>
+                    <title>装修案例 | 蒂珀希设计</title>
+                </Head>
                 <style jsx>{`
                     .wrap{
                         width:1200px;

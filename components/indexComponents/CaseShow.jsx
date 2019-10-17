@@ -38,7 +38,7 @@ const G_Z_DATA = {
 const S_Z_DATA = {
     bg: {
         img: '../../static/img/caseshow/si/1.jpg',
-        href: '/caseDetail?id=14&type=1'
+        href: '/caseDetail?id=18&type=1'
     },
     bottom: [
         {
@@ -142,7 +142,7 @@ const CaseShow = () => {
             // subTitle={"Decoration package"}
             />
             <div className="switch">
-                <div className={`btn ${key === 0 ? 'ac' : ''}`} onClick={() => setKey(0)}>私装类</div>
+                <div className={`btn ${key === 0 ? 'ac' : ''}`} onClick={() => setKey(0)}>私宅类</div>
                 <div className={`btn ${key === 1 ? 'ac' : ''}`} onClick={() => setKey(1)}>工装类</div>
             </div>
             <div className="wrap">

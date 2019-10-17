@@ -6,6 +6,7 @@ import Team from '../components/indexComponents/Team';
 import Connect from '../components/indexComponents/Connect';
 import { Carousel } from 'antd';
 import LazyLoad from 'react-lazyload';
+import Head from 'next/head'
 class Index extends React.Component {
     constructor(props) {
         super(props);
@@ -27,6 +28,9 @@ class Index extends React.Component {
         const packageData = this.state.package[packageIdx];
         return (
             <React.Fragment>
+                <Head>
+                    <title>蒂珀希设计</title>
+                </Head>
                 <style>{`
                 .pic {
                     height:151px;
@@ -48,6 +52,7 @@ class Index extends React.Component {
                     list-style: none;
                     flex-grow:1;
                     align-items:center;
+                    height:100%;
                 }
                 .pic li:nth-child(1){
                     border-left:none;
@@ -63,11 +68,13 @@ class Index extends React.Component {
                     width: 170px;
                     padding-left: 20px;
                     box-sizing:border-box;
+                    height:100%;
                 }
                 .pic_r h3 {
                     margin:0;
                     font-size: 20px;
                     font-weight: normal;
+                    padding-top:28px;
                 }
                 .pic_r p {
                     
@@ -198,29 +205,29 @@ class Index extends React.Component {
                     <li>
                         <i className="left tb"></i>
                         <div className="left pic_r">
-                            <h3>高标准入驻条件</h3>
-                            <p>装修公司参加培训，经过严格考核达标后，才可入驻合作</p>
+                            <h3>已设计为核心竞争力</h3>
+                            <p>一画、一物、一色彩、都会被时间严格地审阅和检 验。所以对于设计我们不敢不敬畏，不能不尽心</p>
                         </div>
                     </li>
                     <li>
                         <i className="left tb tb1"></i>
                         <div className="left pic_r">
-                            <h3>统一辅材标准</h3>
-                            <p>装修公司使用平台认证辅料，保证材料质量和材料品质</p>
+                            <h3>严格供应链品质</h3>
+                            <p>把握好每一个空间对产品的寄托，是我们安身立命 之本，也是社会和美之源</p>
                         </div>
                     </li>
                     <li>
                         <i className="left tb tb2"></i>
                         <div className="left pic_r">
-                            <h3>统一施工验收标准</h3>
-                            <p>有效提升工地的施工品质，使施工质量更有保障</p>
+                            <h3>打造创新意识团队</h3>
+                            <p>我们拒绝平庸和重复，颠覆自我和传统</p>
                         </div>
                     </li>
                     <li>
                         <i className="left tb tb3"></i>
                         <div className="left pic_r">
-                            <h3>统一工地形象</h3>
-                            <p>规范工人的施工标准，让施工现场不再脏、乱、差</p>
+                            <h3>优质高效服务体系</h3>
+                            <p>点石成金是因为心中先有黄金，化腐朽为神奇是因 为相信传奇</p>
                         </div>
                     </li>
                 </ul>

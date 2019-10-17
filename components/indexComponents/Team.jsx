@@ -133,7 +133,7 @@ const Team = () => {
             `}</style>
             <LazyLoad height={130} >
                 <H1
-                    title={<span>团队</span>}
+                    title={<span>核心设计团队</span>}
                 // subTitle={"Decoration package"}
                 />
             </LazyLoad>
