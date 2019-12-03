@@ -212,7 +212,7 @@ class Index extends React.Component {
                     <li>
                         <i className="left tb tb1"></i>
                         <div className="left pic_r">
-                            <h3>严格供应链品质</h3>
+                            <h3>严控供应链品质</h3>
                             <p>把握好每一个空间对产品的寄托，是我们安身立命 之本，也是社会和美之源</p>
                         </div>
                     </li>
@@ -226,7 +226,7 @@ class Index extends React.Component {
                     <li>
                         <i className="left tb tb2"></i>
                         <div className="left pic_r">
-                            <h3>优质高效服务体系</h3>
+                            <h3>建优质高效服务体系</h3>
                             <p>点石成金是因为心中先有黄金，化腐朽为神奇是因 为相信传奇</p>
                         </div>
                     </li>

@@ -18,6 +18,7 @@ export default class MyApp extends App {
         return <Container style={{backgroud:'red'}}>
             <Head>
                 <link href="../static/css/base.css" rel="stylesheet" />
+                <link href="../static/bitbug_favicon.ico" rel="shortcut icon"/>
             </Head>
             {/* <TopNav /> */}
             <Nav />
