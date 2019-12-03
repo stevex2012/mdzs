@@ -16,13 +16,15 @@ module.exports = withCSS({
         },
         ...(typeof origExternals[0] === 'function' ? [] : origExternals)
       ]
+      if (!isServer) {
+        config.module.rules.unshift({
+          test: antStyles,
+          use: 'null-loader'
+        })
+      }
 
-      config.module.rules.unshift({
-        test: antStyles,
-        use: 'null-loader'
-      })
     }
     return config
-    
+
   }
 })

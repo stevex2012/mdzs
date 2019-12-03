@@ -5,7 +5,19 @@ import LazyLoad from 'react-lazyload';
 //轮播数据
 const SWIPER_DATA = [
     {
-        img: ''
+        img: '../../static/img/about/about1.jpg',
+        id: 1
+    },
+    {
+        img: '../../static/img/about/about2.jpg',
+        id: 2
+    },
+    {
+        img: '../../static/img/about/about3.jpg',
+        id: 3
+    }, {
+        img: '../../static/img/about/about4.jpg',
+        id: 4
     }
 ]
 const About = () => {
@@ -26,6 +38,13 @@ const About = () => {
                     text-indent: 2em;
                     padding:20px 0;
                 }
+                .swiper_wrap .item{
+                    display: flex;
+                    align-items: center;
+                }
+                .swiper_wrap .item img{
+                    width:100%
+                }
             `}</style>
             <LazyLoad height={130} >
                 <H1
@@ -39,18 +58,14 @@ const About = () => {
                         dots
                         draggable
                         autoplay>
-                        <div className="item">
-                            <img src="../../static/about/about1.jpg" />
-                        </div>
-                        <div className="item">
-                            <img src="../../static/about/about2.jpg" />
-                        </div>
-                        <div className="item">
-                            <img src="../../static/about/about3.jpg" />
-                        </div>
-                        <div className="item">
-                            <img src="../../static/about/about4.jpg" />
-                        </div>
+                        {SWIPER_DATA.map(item => {
+                            const { img, id } = item;
+                            return (
+                                <div className="item" key={id}>
+                                    <img src={img} alt="" />
+                                </div>
+                            )
+                        })}
                     </Carousel>
                 </LazyLoad>
                 <LazyLoad height={152} >
