@@ -15,7 +15,7 @@ export default class MyApp extends App {
 
     render() {
         const { Component, pageProps } = this.props
-        return <Container style={{backgroud:'red'}}>
+        return <React.Fragment>
             <Head>
                 <link href="../static/css/base.css" rel="stylesheet" />
                 <link href="../static/bitbug_favicon.ico" rel="shortcut icon"/>
@@ -25,6 +25,6 @@ export default class MyApp extends App {
             <Component {...pageProps} />
             <FloatMenu />
             <Footer />
-        </Container>
+        </React.Fragment>
     }
 }
