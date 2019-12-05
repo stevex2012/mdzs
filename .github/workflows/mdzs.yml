@@ -1,0 +1,16 @@
+name: auto-build-deploy
+on:
+    push:
+        paths-ignore:
+            - '**.md'
+        pull_request:
+            paths-ignore:
+            - '**.md'
+
+jobs:
+    build:
+        name: Build
+
+    steps:
+    - name: build
+      run: docker build ./ ../../ 
