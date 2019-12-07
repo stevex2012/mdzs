@@ -9,7 +9,7 @@ COPY ./static/. /app/static
 COPY .babelrc /app/.babelrc
 COPY next.config.js /app/next.config.js
 
-RUN npm install && npm run build && npm install pm2 -g && rm -rf /app/node_modules/  
+RUN npm install && npm run build && npm install pm2 -g && rm -rf /app/node_modules/ && rm -rf  /app/components/ && rm -rf /app/pages
 
 EXPOSE 3000
 

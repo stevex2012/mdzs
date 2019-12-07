@@ -205,7 +205,7 @@ class Index extends React.Component {
                     <li>
                         <i className="left tb"></i>
                         <div className="left pic_r">
-                            <h3>设计为核心竞争力</h3>
+                            <h3>已设计为核心竞争力</h3>
                             <p>一画、一物、一色彩、都会被时间严格地审阅和检 验。所以对于设计我们不敢不敬畏，不能不尽心</p>
                         </div>
                     </li>
