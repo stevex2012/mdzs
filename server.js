@@ -13,7 +13,7 @@ var config = {
     port: 465,//网易邮箱端口 25
     auth: {
         user: '1161869746@qq.com', //邮箱账号
-        pass: 'XXXX'  //邮箱的授权码
+        pass: 'fyqlfnxvtiskihgc'  //邮箱的授权码 这个授权码是自己的qq邮箱你需要申请一个qq
     }
 };
 // 创建一个SMTP客户端对象
@@ -36,13 +36,14 @@ app.prepare().then(() => {
         // 创建一个邮件对象
         var mail = {
             // 发件人
-            from: 'XXXX<XXXX@qq.com>',
+            from: 'steve<1161869746@qq.com>',
             // 主题
-            subject: '注册',
+            subject: 'sqceshi',
             // 收件人
-            to: 'XXXX@qq.com',
+            to: '18725873459@163.com',
             // 邮件内容，HTML格式
-            text: '点击激活：xxx' //可以是链接，也可以是验证码
+            text: '<div style="color:orange">test html</div>', //可以是链接，也可以是验证码
+            html:'',
         };
         send(mail);
 
