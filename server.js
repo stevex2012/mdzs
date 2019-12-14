@@ -75,7 +75,7 @@ app.prepare().then(() => {
             // 主题
             subject: '客户留资',
             // 收件人
-            to: '18725873459@163.com',
+            to: '99959703@qq.com',
             // 邮件内容，HTML格式
             text: '客户留资', //可以是链接，也可以是验证码
             html: getEmailHtml(request.body),
