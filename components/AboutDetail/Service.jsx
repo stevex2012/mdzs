@@ -23,18 +23,19 @@ const DATA = [
 ]
 
 function Service() {
-    return <div>
-        <style>{`
-            .img{
+    return (
+        <div className="xxx_service">
+            <style>{`
+            .xxx_service .img{
                 width:100%;
             }
-            .main_s{
+            .xxx_service .main_s{
                 width:1200px;
                 margin:0 auto;
                 display: flex;
                 flex-wrap: wrap;
             }
-            .item{
+            .xxx_service .item{
                 position: relative;
                 width: 50%;
                 width: 600px;
@@ -46,7 +47,7 @@ function Service() {
                 box-sizing: border-box;
                 border: 10px solid transparent;
             }
-            .w_s{
+            .xxx_service .w_s{
                 position: absolute;
                 left: 50%;
                 top: 50%;
@@ -57,24 +58,25 @@ function Service() {
                 text-align: center;
             }
         `}</style>
-        <div>
-            <img className="img" src="../../static/servicebanner.png" />
-        </div>
-        <div className="main_s">
-            {
-                DATA.map(item => {
-                    const { title, desc, img } = item;
-                    return <div key={title} className="item">
-                        <img src={img} alt="" />
-                        <div className="w_s">
-                            <div className="t">{title}</div>
-                            <div className="s_t">{desc}</div>
+            <div>
+                <img className="img" src="../../static/servicebanner.png" />
+            </div>
+            <div className="main_s">
+                {
+                    DATA.map(item => {
+                        const { title, desc, img } = item;
+                        return <div key={title} className="item">
+                            <img src={img} alt="" />
+                            <div className="w_s">
+                                <div className="t">{title}</div>
+                                <div className="s_t">{desc}</div>
+                            </div>
                         </div>
-                    </div>
-                })
-            }
+                    })
+                }
+            </div>
         </div>
-    </div>
+    )
 }
 
 export default Service;
