@@ -57,8 +57,7 @@ function Footer() {
                 <div className="addr">邮箱：99959703@qq.com</div>
                 <div className="addr">手机：13436092281</div>
                 <div className="tel">电话：023-63018362</div>
-                <div className="tel">All RightsReserved. by 重庆蒂珀希工程设计咨询有限公司 渝ICP备19013693号</div>
-                <div className="tel">备案查询链接: <a href="http://www.beian.miit.gov.cn" target="_blank">www.beian.miit.gov.cn</a></div>
+                <div className="tel">All RightsReserved. by 重庆蒂珀希工程设计咨询有限公司 <a href="http://www.beian.miit.gov.cn" target="_blank">渝ICP备19013693号</a></div>
             </div>
         </div>
     )
